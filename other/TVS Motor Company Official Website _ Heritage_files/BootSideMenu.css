@@ -1,0 +1,178 @@
+.sidebar{
+      z-index: 999999;
+      position: fixed;
+      top: -1px;
+      bottom: -1px;
+      padding:0px;
+      width: auto;
+	  background-color:transparent;
+     
+ 
+      
+}
+.list-group .nav-tabs>li>a{   color:#666666 }
+.list-group img {
+    padding-left:13px;
+}
+.list-group .nav-tabs>li>a:hover {
+    text-decoration: none;
+    background: transparent !important;
+}
+.list-group .nav-tabs>li>a:hover {
+    border-color: transparent !important;
+}
+.list-group .nav-tabs>li>a:focus {
+     background-color: #FFF !important;
+}
+.list-group .nav-tabs {
+     border-bottom: 0px solid #ddd; 
+    background: #E7E7E7;
+}
+
+.fb_c1{
+
+margin-left: 11px;
+    margin-top: 11px;
+    margin-bottom: 11px;
+
+}
+
+.fb_c2{
+
+margin-left: 11px;
+    margin-top: 11px;
+    margin-bottom: 11px;
+
+}
+.fb_c3{
+
+margin-left: 11px;
+    margin-top: 11px;
+    margin-bottom: 11px;
+
+}
+.sidebar > .row > .col-xs-12, .sidebar > .row > .col-sm-12, .sidebar > .row > .col-md-12, .sidebar > .row > .col-lg-12{
+      padding:0px;
+      position: absolute;
+      bottom: 0px;
+      top: 0px;
+      overflow: auto;           
+}
+
+.sidebar >.row{
+      margin:0px;
+}
+
+.sidebar {
+      width: auto;
+}
+.sidebar.sidebar-left{
+      left:0px;
+      right:20px;
+}
+
+.sidebar.sidebar-right{
+      right:0px;
+      left:20px;
+}
+
+@media (min-width: 400px) {
+
+}
+@media (min-width: 528px) {
+      .sidebar {
+             width: 40%;
+      }
+      .sidebar.sidebar-left{
+            left:0px;
+            right:auto;
+      }
+
+      .sidebar.sidebar-right{
+            right:0px;
+            left:auto;
+      }
+}
+@media (min-width: 768px) {
+      .sidebar {
+             width: 40%;
+      }
+      .sidebar.sidebar-left{
+            left:0px;
+            right:auto;
+      }
+
+      .sidebar.sidebar-right{
+            right:0px;
+            left:auto;
+      }
+}
+@media (min-width: 992px) {
+      .sidebar {
+          width: 40%;
+      }
+      .sidebar.sidebar-left{
+            left:0px;
+            right:auto;
+      }
+
+      .sidebar.sidebar-right{
+            right:0px;
+            left:auto;
+      }
+}
+@media (min-width: 1200px) {
+      .sidebar {
+            width: 40%;
+            top:15%;
+            background:#FFF;
+            height:565px;
+      }
+      .sidebar.sidebar-left{
+            left:0px;
+            right:auto;
+      }
+
+      .sidebar.sidebar-right{
+            right:0px;
+            left:auto;
+      }
+}
+.toggler{
+      width: 20px;
+      height: 100px;
+      position: absolute;
+      top: -2%;
+      cursor: pointer;
+	   background: url(../images/social-plus.png) no-repeat left ;
+     
+}
+.sidebar-left > .toggler{
+      right: -20px;
+} 
+
+.sidebar-right > .toggler{
+      left: -20px;
+     } 
+
+.sidebar .submenu{
+      display: none;
+      position: fixed;
+} 
+
+/*Native BootStrap Hack*/
+.sidebar .list-group-item:last-child, .sidebar .list-group-item:first-child{
+      border-radius:0px;
+}
+
+.sidebar .list-group{
+      margin-bottom:0px;
+}
+.sidebar .list-group-item{
+      padding: 5px;
+      border: 1px solid #DDD;
+      border-left: 0px;
+      border-right: 0px;
+      margin-bottom: 0px;
+      margin-top: -1px;
+}

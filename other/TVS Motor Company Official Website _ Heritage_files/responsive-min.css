@@ -1,0 +1,73 @@
+@media (min-width: 992px) and (max-width: 1024px)
+{
+    .inno_cont_1 {
+    width: 520px;
+    height: 91px;
+    float: left;
+}
+.inno_img_1 {
+    float: right;
+    margin-top: -147px;
+}
+.inno_inner_1 {
+    width: 150px;
+	  height: 400px;
+}
+.inno_inner_2 {
+    width: 150px;
+	  height: 400px;
+}
+.inno_inner_3 {
+    width: 150px;
+	  height: 400px;
+}
+.inno_inner_4 {
+    width: 150px;
+	  height: 400px;
+}
+.inno_sec_3 {
+    
+    padding-left: 45px;
+}
+.inno_inner_1:hover .inno_img_3 {
+   
+    bottom: 15px;
+}
+.inno_img_3 {
+    
+    bottom: 15px;
+}
+
+}
+@media (min-width: 768px) and (max-width: 991px)
+{
+.inno_cont_1 {
+    width: 345px;
+   
+}
+.inno_img_1 {
+    float: right;
+    margin-top: -152px;
+}
+.inno_sec_2 {
+   
+    margin-top: 26px;
+    width: 350px;
+}	
+.inno_sec_3 {
+   
+    padding-left: 80px;
+}
+.inno_inner_3 {
+    
+    margin-left: 0px;
+    margin-top: 30px;
+}
+.inno_inner_4 {
+    
+    margin-left: 15px;
+    margin-top: 30px;
+}
+
+}
+

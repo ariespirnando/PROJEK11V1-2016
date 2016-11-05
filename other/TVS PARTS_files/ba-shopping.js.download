@@ -1,0 +1,284 @@
+﻿function addToCart(CategoryID, ModelID, PartsID, Quantity, Colour, request_part) {
+    var url_data = '';
+    if (Colour != "0") {
+        url_data = "cid=" + CategoryID + "&model_id=" + ModelID + "&pid=" + PartsID + "&qty=" + Quantity + "&colour=" + Colour + "&request_part=" + request_part + "&action=add";
+    }
+    else {
+        url_data = "cid=" + CategoryID + "&model_id=" + ModelID + "&pid=" + PartsID + "&qty=" + Quantity + "&request_part=" + request_part + "&action=add";
+    }
+    $.ajax({
+        type: "GET",
+        data: url_data,
+        url: "shopping-cart-add.aspx",
+        beforeSend: function () {
+            $('#ajax_load').show();
+        },
+        complete: function () {
+            $('#ajax_load').hide();
+        },
+        success: function (response) {
+            if (response == '0') {
+                alert('Tidak dapat menambahkan item ke keranjang belanja, silahkan coba lagi atau mencoba setelah beberapa waktu.');
+                $('#txtQuantity' + PartsID).val('');
+                return false;
+            }
+            else if (response == '-1') {
+                alert('Habis persediaannya.');
+                return false;
+            }
+            else {
+                var arr = new Array();
+                arr = response.split('-');
+                if (arr[0] == '2') {
+                    alert('Jumlah stock yang tersedia hanya ' + arr[1]);
+                    $('#txtQuantity' + PartsID).val('');
+                    return false;
+                }
+                else {
+                    var arr_total = new Array();
+                    arr_total = response.split('-');
+                    $('#mycart_count').empty().html(arr_total[1]);
+                    getMiniCart();
+                    $('#incTop_mini_cart').slideDown();
+                    $('html, body').animate({ scrollTop: '0px' }, 'slow');
+                }
+            }
+        },
+        error: function (response) {
+            $('#ajax_load').hide();
+        }
+    });
+}
+
+function updateToCart(CategoryID, ModelID, PartsID, Quantity, Colour, request_part) {
+    var url_data = '';
+    if (Colour != "0") {
+        url_data = "cid=" + CategoryID + "&model_id=" + ModelID + "&pid=" + PartsID + "&qty=" + Quantity + "&colour=" + Colour + "&request_part=" + request_part + "&action=update";
+    }
+    else {
+        url_data = "cid=" + CategoryID + "&model_id=" + ModelID + "&pid=" + PartsID + "&qty=" + Quantity + "&request_part=" + request_part + "&action=update";
+    }
+    $.ajax({
+        type: "GET",
+        data: url_data,
+        url: "shopping-cart-add.aspx",
+        beforeSend: function () {
+            $('#ajax_load').show();
+        },
+        complete: function () {
+            $('#ajax_load').hide();
+        },
+        success: function (response) {
+
+            if (response == '0') {
+                alert('Tidak dapat menambahkan item ke keranjang belanja, silahkan coba lagi atau mencoba setelah beberapa waktu.');
+                return false;
+            }
+            else if (response == '-1') {
+                alert('Habis persediaannya.');
+                return false;
+            }
+            else {
+                var arr = new Array();
+                arr = response.split('-');
+                if (arr[0] == '2') {
+                    alert('Jumlah stock yang tersedia hanya ' + arr[1]);
+                    getFullCart();
+                    getMiniCart();
+                    return false;
+                }
+                else {
+                    var arr_total = new Array();
+                    arr_total = response.split('-');
+                    $('#mycart_count').empty().html(arr_total[1]);
+                    getFullCart();
+                    getMiniCart();
+                    //$('#incTop_mini_cart').slideDown();
+                }
+            }
+        }
+
+    });
+}
+
+function getMiniCart() {
+    $.ajax({
+        type: 'GET',
+        url: "shopping-cart-mini-get.aspx",
+        beforeSend: function () {
+            $('#ajax_load').show();
+        },
+        complete: function () {
+            $('#ajax_load').hide();
+        },
+        success: function (response) {
+            if (response != '')
+                $('#incTop_mini_cart').empty().html(response);
+            else
+                $('#incTop_mini_cart').empty().html('Jumlah Item dalam keranjang belanja anda.');
+        }
+    });
+}
+
+function getFullCart() {
+    $.ajax({
+        type: "GET",
+        url: "shopping-cart-full-get.aspx",
+        beforeSend: function () {
+            $('#ajax_load').show();
+        },
+        complete: function () {
+            $('#ajax_load').hide();
+        },
+        success: function (response) {
+            if (response != '')
+                $('#shopping_cart_items').empty().html(response);
+            else {
+                $('#shopping_cart_items').empty().html('Jumlah Item dalam keranjang belanja anda.');
+                $('#shopping_cart_buttons').css('display', 'none');
+            }
+        }
+    });
+}
+
+function doChangeQuantity(txtID, catID, modelID, aID, cID,request_part) {
+    if ($('#a' + aID).text().trim() == 'Ganti') {
+        $('#' + txtID).removeAttr('readOnly');
+        $('#' + txtID).attr('style', 'border:1px solid #ccc;');
+        $('#a' + aID).text('Simpan');
+    }
+    else if ($('#a' + aID).text() == 'Simpan') {
+        var qtyVal = $('#' + txtID).val();
+        if (qtyVal == '') {
+            alert('Silakan masukan jumlah.');
+            $('#' + txtID).focus();
+            return false;
+        }
+        if (!qtyVal.match(/^\d+/)) {
+            alert('Harap hanya memasukkan nilai numerik saja.');
+            $('#' + txtID).val('');
+            $('#' + txtID).focus();
+            return false;
+        }
+        if (request_part == 'True') {
+            request_part = '1';
+        }
+        else {
+            request_part = '0';
+        }
+        updateToCart(catID, modelID, aID, $('#' + txtID).val(), cID, request_part);
+        $('#a' + aID).text('Ganti');
+        $('#' + txtID).attr('readOnly', 'readOnly');
+        $('#' + txtID).attr('style', 'border:1px solid #fff;');
+    }
+}
+
+function doRemoveItem(CategoryID, ModelID, PartsID, Quantity, request_part) {
+    var us = confirm('Apakah anda ingin membatalkan item ini dari keranjang?');
+    if (us == true) {
+        $.ajax({
+            type: "GET",
+            data: "cid=" + CategoryID + "&model_id=" + ModelID + "&pid=" + PartsID + "&qty=" + Quantity + "&request_part=" + request_part + "&action=remove",
+            url: "shopping-cart-add.aspx",
+            beforeSend: function () {
+                $('#ajax_load').show();
+            },
+            complete: function () {
+                $('#ajax_load').hide();
+            },
+            success: function (response) {
+                if (response == '0') {
+                    alert('Maaf, Tidak dapat membuang item ini dari keranjang, silakan coba lagi.');
+                    return false;
+                }
+                else {
+                    var arr_total = new Array();
+                    arr_total = response.split('-');
+                    $('#mycart_count').empty().html(arr_total[1]);
+                    getFullCart();
+                    getMiniCart();
+                    // $('#incTop_mini_cart').slideDown();
+                }
+            }
+        });
+    }
+}
+
+function addColourPartToCart(cid, model_id, pid, colour_id, request_part) {
+    var qty = $('#txtQuantity' + pid).val();
+    if (qty == '') {
+        alert('Silakan masukan jumlah.');
+        $('#txtQuantity' + pid).focus();
+        return false;
+    }
+    if (!qty.match(/^\d+/)) {
+        alert('Harap hanya memasukkan nilai numerik saja.');
+        $('#txtQuantity' + pid).val('');
+        $('#txtQuantity' + pid).focus();
+        return false;
+    }
+    if (qty != '') {
+        addToCart(cid, model_id, pid, qty, colour_id, request_part);
+    }
+}
+
+
+function addPartToCart(cid, model_id, pid, request_part) {
+    var parts_colour = '0';
+    var qty = $('#txtQuantity' + pid).val();
+    if ($('.parts_class' + pid).css('display') == 'block') {
+        parts_colour = $('.parts_class' + pid).val();
+        if (parts_colour == '0') {
+
+            alert('Silakan pilih warna.');
+            $('.parts_class' + pid).focus();
+            return false;
+        }
+    }
+    if (qty == '') {
+        alert('Silakan masukan jumlah.');
+        $('#txtQuantity' + pid).focus();
+        return false;
+    }
+    if (!qty.match(/^\d+/)) {
+        alert('Harap hanya memasukkan nilai numerik saja.');
+        $('#txtQuantity' + pid).val('');
+        $('#txtQuantity' + pid).focus();
+        return false;
+    }
+    if (qty != '') {
+        addToCart(cid, model_id, pid, qty, parts_colour, request_part);
+    }
+}
+
+
+function addPartToCartForDetails(cid, model_id, pid, request_part) {
+    var parts_colour = '0';
+    var qty = $('#txtQuantity' + pid).val();
+    if ($('.parts_class').css('display') == 'block') {
+
+        parts_colour = $('.parts_class').val();
+
+        if (parts_colour == '0') {
+            alert('Silakan pilih warna.');
+            $('.parts_class').focus();
+            return false;
+        }
+    }
+
+
+    if (qty == '') {
+        alert('Silakan masukan jumlah.');
+        $('#txtQuantity' + pid).focus();
+        return false;
+    }
+    if (!qty.match(/^\d+/)) {
+        alert('Harap hanya memasukkan nilai numerik saja.');
+        $('#txtQuantity' + pid).val('');
+        $('#txtQuantity' + pid).focus();
+        return false;
+    }
+    if (qty != '') {
+        addToCart(cid, model_id, pid, qty, parts_colour, request_part);
+    }
+}

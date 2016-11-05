@@ -1,0 +1,854 @@
+﻿/* Home page */
+
+function doCheckModel() {
+    var year = $('#ddlModelYear').val();
+    var model = $('#ddlModelName').val();
+    if (trimAll(year) == '0') {
+        alert('Silakan Pilih Tahun');
+        $('#ddlModelYear').focus();
+        return false;
+    }
+    else if (trimAll(model) == '0') {
+        alert('Silakan Pilih Model');
+        $('#ddlModelName').focus();
+        return false;
+    }
+}
+
+function doCheckTopModel() {
+    var year = $('#ddlSelectYear').val();
+    var model = $('#ddlSelectTopModel').val();
+    if (trimAll(year) == '0') {
+        alert('Silakan Pilih Tahun');
+        $('#ddlSelectYear').focus();
+        return false;
+    }
+    else if (trimAll(model) == '0') {
+        alert('Silakan Pilih Model');
+        $('#ddlSelectTopModel').focus();
+        return false;
+    }
+}
+
+function doCheckDelivery() {
+    var year = $('#ddlProvince').val();
+    var model = $('#ddlKota').val();
+    if (trimAll(year) == '0') {
+        alert('Pilih Provinsi');
+        $('#ddlProvince').focus();
+        return false;
+    }
+    else if (trimAll(model) == '0') {
+        alert('Pilih Kota / Kabupate');
+        $('#ddlKota').focus();
+        return false;
+    }
+    return true;
+}
+
+
+function doCheckFastPartModel() {
+    var model = $('#ddlSelectModel').val();
+    var part = $('#ddlParts').val();
+    if (trimAll(model) == '0') {
+        alert('Silakan Pilih Model');
+        $('#ddlSelectModel').focus();
+        return false;
+    }
+    else if (trimAll(part) == '0') {
+        alert('Silakan Pilih Part');
+        $('#ddlParts').focus();
+        return false;
+    }
+}
+
+function doCheckPartNo() {
+    var partno = $('#txtPartNO').val();
+    if (trimAll(partno) == '' || trimAll(partno) == 'Tekan No Part') {
+        alert('Silakan tekan no Part');
+        $('#txtPartNO').focus();
+        return false;
+    }
+    if ($("#ddlPart_no_Model").val() == '0') {
+        alert('Silakan Pilih Model');
+        $('#ddlPart_no_Model').focus();
+        return false;
+    }
+    //    if ($("#ddlPart_no_Category").val() == '0') {
+    //        alert('Silakan pilih kategori');
+    //        $('#ddlPart_no_Category').focus();
+    //        return false;
+    //    }
+
+    return true;
+}
+
+function doCheckPartName() {
+    var partno = $('#txtPartName').val();
+    if (trimAll(partno) == '' || trimAll(partno) == 'Masukkan nama parts') {
+        alert('silakan masukkan nama part');
+        $('#txtPartName').focus();
+        return false;
+    }
+    if ($("#ddlModel").val() == '0') {
+        alert('Silakan Pilih Model');
+        $('#ddlModel').focus();
+        return false;
+    }
+    //    if ($("#ddlCategory").val() == '0') {
+    //        alert('Silakan pilih kategori');
+    //        $('#ddlCategory').focus();
+    //        return false;
+    //    }
+}
+
+function doCheckChassisNO() {
+    var chno = $('#txtChassisNO').val();
+    if (trimAll(chno) == '' || trimAll(chno) == 'Tekan No Sasis') {
+        alert('Silakan tekan no Sasis.');
+        $('#txtChassisNO').focus();
+        return false;
+    }
+    return true;
+}
+
+
+
+/* registration-login */
+
+function register_validation() {
+    var name = document.getElementById('txtName').value;
+    var email = document.getElementById('txtEmail').value;
+    var confirm_email = document.getElementById('txtConfirm_email').value;
+    var password = document.getElementById('txtPassword').value;
+    var confirm_password = document.getElementById('txtConfirm_password').value;
+    var mobile_no = document.getElementById('txtTelephone').value;
+    //    var ddlyear = document.getElementById("year").value;
+    //    var ddlmonth = document.getElementById("month").value;
+    //    var ddlday = document.getElementById("day").value;
+    //    var ktp_no = document.getElementById("txtKtp_no").value;
+
+
+    if (trimAll(name) == '') {
+        alert('Silakan masukkan nama anda');
+        document.getElementById('txtName').focus();
+        return false;
+    }
+    if (trimAll(email) == '') {
+        alert('Silakan masukkan alamat email anda');
+        document.getElementById('txtEmail').focus();
+        return false;
+    }
+    if (email.search(/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/) == -1) {
+        alert('silakan masukkan alamat email yang benar');
+        document.getElementById('txtEmail').focus();
+        return false;
+    }
+    if (trimAll(confirm_email) == '') {
+        alert('Harap verifikasi alamat email Anda');
+        document.getElementById('txtConfirm_email').focus();
+        return false;
+    }
+    if (confirm_email.search(/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/) == -1) {
+        alert('silakan masukkan alamat email yang benar');
+        document.getElementById('txtConfirm_email').focus();
+        return false;
+    }
+    if (trimAll(email) != trimAll(confirm_email)) {
+        alert('Alamat email yang salah');
+        document.getElementById('txtConfirm_email').focus();
+        return false;
+    }
+    if (trimAll(password) == '') {
+        alert('Masukkan kata sandi/password');
+        document.getElementById('txtPassword').focus();
+        return false;
+    }
+    else if (trimAll(password).length < 6) {
+        alert('Sandi/password harus minimal enam karakter');
+        document.getElementById('txtPassword').focus();
+        return false;
+    }
+    if (trimAll(confirm_password) == '') {
+        alert('Silahkan verifikasi kata sandi/password');
+        document.getElementById('txtConfirm_password').focus();
+        return false;
+    }
+    if (trimAll(password) != trimAll(confirm_password)) {
+        alert('sandi/password salah');
+        document.getElementById('txtConfirm_password').focus();
+        return false;
+    }
+    if (trimAll(mobile_no) == '') {
+        alert('Silakan Masukkan No mobil');
+        document.getElementById('txtTelephone').focus();
+        return false;
+    }
+    //    if (ddlyear == '0') {
+    //        alert('Silahkan pilih tahun');
+    //        document.getElementById("year").focus();
+    //        return false;
+    //    }
+    //    if (ddlmonth == '0') {
+    //        alert('Silakan pilih bulan');
+    //        document.getElementById("month").focus();
+    //        return false;
+    //    }
+    //    if (ddlday == '0') {
+    //        alert('Silakan pilih hari');
+    //        document.getElementById("day").focus();
+    //        return false;
+    //    }
+    //    if (ktp_no == '') {
+    //        alert('Masukkan no KTP');
+    //        document.getElementById('txtKtp_no').focus();
+    //        return false;
+    //    }
+}
+function login_validation() {
+    var email = document.getElementById('txtLogin_email').value;
+    var password = document.getElementById('txtLogin_password').value;
+    if (trimAll(email) == '') {
+        alert('Silakan masukkan alamat email anda');
+        document.getElementById('txtLogin_email').focus();
+        return false;
+    }
+    if (email.search(/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/) == -1) {
+        alert('silakan masukkan alamat email yang benar');
+        document.getElementById('txtLogin_email').focus();
+        return false;
+    }
+    if (trimAll(password) == '') {
+        alert('Masukkan kata sandi/password');
+        document.getElementById('txtLogin_password').focus();
+        return false;
+    }
+    else if (trimAll(password).length < 6) {
+        alert('Sandi/password harus minimal enam karakter');
+        document.getElementById('txtLogin_password').focus();
+        return false;
+    }
+}
+function guest_login_validation() {
+    var email = document.getElementById('txtGuest_email').value;
+    if (trimAll(email) == '') {
+        alert('Silakan masukkan alamat email anda');
+        document.getElementById('txtGuest_email').focus();
+        return false;
+    }
+    if (email.search(/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/) == -1) {
+        alert('silakan masukkan alamat email yang benar');
+        document.getElementById('txtGuest_email').focus();
+        return false;
+    }
+}
+
+
+/* Track your order */
+
+function validation_for_track_your_order() {
+    var order_no = $('#txtOrder').val();
+    if (trimAll(order_no) == '') {
+        alert('Masukkan Nomor pesanan anda');
+        $('#txtOrder').focus();
+        return false;
+    }
+
+}
+
+
+/* Contact us */
+
+function contact_validation() {
+    var Name = $('#txtName').val();
+    var Email = $('#txtEmail').val();
+    var Telephone = $('#txtPhone').val();
+    var Message = $('#txtMessage').val();
+    if (trimAll(Name) == '') {
+        alert('Silakan masukkan nama anda');
+        $('#txtName').focus();
+        return false;
+    }
+    if (trimAll(Email) == '') {
+        alert('Silakan masukkan alamat email anda');
+        $('#txtEmail').focus();
+        return false;
+    }
+    if (Email.search(/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/) == -1) {
+        alert("silakan masukkan alamat email yang benar")
+        $('#txtEmail').focus();
+        return false;
+    }
+    if (trimAll(Telephone) == '') {
+        alert(' Silakan masukkan nomor telepon/HP anda');
+        $('#txtPhone').focus();
+        return false;
+    }
+    if (trimAll(Message) == '') {
+        alert('Silakan masukkan pesan anda');
+        $('#txtMessage').focus();
+        return false;
+    }
+    $('#btnSubmit').css('display', 'none');
+    return true;
+}
+
+function isNumberKey(evt) {
+    var charCode = (evt.which) ? evt.which : event.keyCode
+    if (charCode > 31 && (charCode < 48 || charCode > 57))
+        return false;
+
+    return true;
+}
+
+/* Feedback/Complaints */
+
+function complaint_validation() {
+    var Name = $('#txtFeedbackName').val();
+    var Email = $('#txtFeedbackEmail').val();
+    var feedback_topic = $('#ddlFeedback_topic').val();
+    var Message = $('#txtMessage').val();
+    if ($("input[name='feedback_rank']:checked").length == 0) {
+        alert("Please select feedback rank");
+        $('#feed_one').focus();
+        return false;
+    }
+    if (trimAll(feedback_topic) == '0') {
+        alert('Please select topic');
+        $('#ddlFeedback_topic').focus();
+        return false;
+    }
+    if (trimAll(Name) == '') {
+        alert('Silakan masukkan nama anda');
+        $('#txtFeedbackName').focus();
+        return false;
+    }
+    if (trimAll(Email) == '') {
+        alert('Silakan masukkan alamat email anda');
+        $('#txtFeedbackEmail').focus();
+        return false;
+    }
+    if (Email.search(/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/) == -1) {
+        alert("silakan masukkan alamat email yang benar");
+        $('#txtFeedbackEmail').focus();
+        return false;
+    }
+    if (trimAll(Message) == '') {
+        alert('Silakan masukkan pesan anda');
+        $('#txtMessage').focus();
+        return false;
+    }
+
+}
+
+/* Parts */
+
+function doCheckPartNOForParts() {
+    if ($('#txtPartNO').val() != "" && $('#txtPartNO').val() != "Tekan No Part") {
+        if ($("#ddlPart_no_Model").val() != '0') {
+            CheckPartNO($('#txtPartNO').val(), $('#ddlPart_no_Model').val(), $('#ddlPart_no_Category').val());
+        }
+        else {
+            alert('Silakan Pilih Model');
+            $('#ddlPart_no_Model').focus();
+        }
+    }
+    else {
+        alert('Silakan tekan no Part');
+        $('#txtPartNO').focus();
+    }
+}
+
+
+function CheckPartNO(pno, model, category) {
+    $.ajax({
+        type: "GET",
+        data: "pno=" + pno + "&model=" + model + "&category=" + category,
+        url: "check-partno.aspx",
+        beforeSend: function () {
+            $('#ajax_load').show();
+        },
+        complete: function () {
+            $('#ajax_load').hide();
+        },
+        success: function (response) {
+            if (response != "0") {
+                var res_data = new Array();
+                res_data = response.split('-');
+                window.location = "parts-search.aspx?cid=" + res_data[0] + "&modelid=" + res_data[1] + "&variant_id=" + res_data[2];
+            }
+            else
+                alert('Maaf, nomor part tidak ditemukan.');
+        }
+    });
+}
+
+function doCheckPartNameForParts() {
+    if ($('#txtPartName').val() != "" && $('#txtPartName').val() != "Masukkan nama parts") {
+        if ($("#ddlModel").val() != '0') {
+            CheckPartNAME($('#txtPartName').val(), $('#ddlModel').val(), $('#ddlCategory').val());
+        }
+        else {
+            alert('Silakan Pilih Model');
+            $('#ddlModel').focus();
+        }
+    }
+    else {
+        alert('silakan masukkan nama part');
+        $('#txtPartName').focus();
+    }
+}
+
+
+function doCheckFastMovingParts() {
+
+    if ($('#ddlSelectModel').val() != '0') {
+
+        if ($("#ddlParts").val() != '0') {
+
+            return true;
+        }
+        else {
+            alert('Silakan Pilih Part');
+            $('#ddlParts').focus();
+            return false;
+        }
+    }
+    else {
+        alert('Silakan Pilih Model');
+        $('#ddlSelectModel').focus();
+        return false;
+    }
+}
+
+
+
+function CheckFastMovingPart(model, parts_id) {
+    var res_data = new Array();
+    res_data = model.split('-');
+    window.location = "fast-moving-parts.aspx?modelid=" + res_data[1] + "&variant_id=" + res_data[0] + "&parts_id=" + parts_id;
+}
+
+
+function CheckPartNAME(pname, model, category) {
+    $.ajax({
+        type: "GET",
+        data: "pname=" + pname + "&model=" + model + "&category=" + category,
+        url: "check-partname.aspx",
+        beforeSend: function () {
+            $('#ajax_load').show();
+        },
+        complete: function () {
+            $('#ajax_load').hide();
+        },
+        success: function (response) {
+            if (response != "0") {
+                var res_data = new Array();
+                res_data = response.split('-');
+                if (res_data.length == 3) {
+                    window.location = "parts-search.aspx?cid=" + res_data[0] + "&modelid=" + res_data[1] + "&variant_id=" + res_data[2];
+                }
+                else {
+                    window.location = "parts-search.aspx?modelid=" + res_data[0] + "&variant_id=" + res_data[1];
+                }
+            }
+            else
+                alert('Maaf, Nama part tidak ditemukan.');
+        }
+    });
+}
+
+
+
+function doCheckChassisNOForParts() {
+    if ($('#txtChassisNO').val() != "" && $('#txtChassisNO').val() != "Tekan No Sasis") {
+        CheckChassisNO($('#txtChassisNO').val());
+    }
+    else {
+        alert('Silakan tekan no Sasis.');
+        $('#txtChassisNO').focus();
+    }
+}
+
+
+function CheckChassisNO(chno) {
+    $.ajax({
+        type: "GET",
+        data: "cno=" + chno,
+        url: "check-chassisno.aspx",
+        beforeSend: function () {
+            $('#ajax_load').show();
+        },
+        complete: function () {
+            $('#ajax_load').hide();
+        },
+        success: function (response) {
+            if (response != "0") {
+
+                var res_data = new Array();
+                res_data = response.split('-');
+
+                if (res_data[0] == '1') {
+                    window.location = "model-search.aspx?chassisno=" + res_data[1] + "&year=" + res_data[2];
+                }
+                else if (res_data[0] == '2') {
+                    window.location = "variant-search.aspx?modelid=" + res_data[1] + "&year=" + res_data[2];
+                }
+            }
+            else
+                alert('Maaf, Nomor rangka tidak ditemukan.');
+        }
+    });
+}
+
+/* Checkout Page */
+
+
+function doCheckoutValidation() {
+    var emailid = $('#txtEmail').val();
+    var billName = $('#txtBillingName').val();
+    var billAddress1 = $('#txtBillingAddress1').val();
+    var billAddress2 = $('#txtBillingAddress2').val();
+    var billState = $('#DDLBillingState').val();
+    var billCity = $('#txtBillingCity').val();
+    var billSelectCity = $('#DDLBillingCity').val();
+    var billKecamatan = $('#txtBillKecatan').val();
+    var billSelectKecamatan = $('#ddlBillKecatan').val();
+    var billPhone = $('#txtBillingPhone').val();
+    var billMobile = $('#txtBillingMobile').val();
+
+    var shipName = $('#txtShippingName').val();
+    var shipAddress1 = $('#txtShippingAddress1').val();
+    var shipAddress2 = $('#txtShippingAddress2').val();
+    var shipState = $('#DDLShippingState').val();
+    var shipCity = $('#txtShippingCity').val();
+    var shipSelectCity = $('#DDLShippingCity').val();
+    var shipKecamatan = $('#txtshipKecatan').val();
+    var shipSelectKecamatan = $('#ddlShipKecatan').val();
+    var shipPhone = $('#txtShippingPhone').val();
+    var shipMobile = $('#txtShippingMobile').val();
+
+    if (trimAll(emailid) == '') {
+        alert('Silakan masukkan alamat email anda');
+        $('#txtEmail').focus();
+        return false;
+    }
+    if (emailid.search(/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/) == -1) {
+        alert("silakan masukkan alamat email yang benar")
+        $('#txtEmail').focus();
+        return false;
+    }
+    if (trimAll(billName) == '') {
+        alert('Silakan masukkan nama pembayaran anda');
+        $('#txtBillingName').focus();
+        return false;
+    }
+    if (trimAll(billAddress1) == '') {
+        alert('silakan masukkan alamat pembayaran anda');
+        $('#txtBillingAddress1').focus();
+        return false;
+    }
+    if (trimAll(billState) == '0') {
+        alert('Silakan pilih propinsi anda tinggal');
+        $('#DDLBillingState').focus();
+        return false;
+    }
+    if ($('#txtBillingCity').css('display') == 'block') {
+        if (trimAll(billCity) == '') {
+            alert('Silakan pilih kota penagihan');
+            $('#txtBillingCity').focus();
+            return false;
+        }
+    }
+    if ($('#DDLBillingCity').css('display') == 'block') {
+        if (trimAll(billSelectCity) == '0') {
+            alert('Silakan pilih kota penagihan');
+            $('#DDLBillingCity').focus();
+            return false;
+        }
+    }
+    if ($('#txtBillKecatan').css('display') == 'block') {
+        if (trimAll(billKecamatan) == '') {
+            alert('Silakan masukkan Kecamatan');
+            $('#txtBillKecatan').focus();
+            return false;
+        }
+    }
+    if ($('#ddlBillKecatan').css('display') == 'block') {
+        if (trimAll(billSelectKecamatan) == '0') {
+            alert('Silakan pilih Kecamatan');
+            $('#ddlBillKecatan').focus();
+            return false;
+        }
+    }
+    if (trimAll(billMobile) == '') {
+        alert('Silakan masukkan no tlp/hp sesuai pembelian anda');
+        $('#txtBillingMobile').focus();
+        return false;
+    }
+    if ($("#chkShippingFlag").is(":checked")) {
+        if (trimAll(shipName) == '') {
+            alert('Silakan masukkan nama untuk pengiriman anda');
+            $('#txtShippingName').focus();
+            return false;
+        }
+        if (trimAll(shipAddress1) == '') {
+            alert('silakan masukkan alamat pengiriman 1 anda');
+            $('#txtShippingAddress1').focus();
+            return false;
+        }
+        if (trimAll(shipState) == '0') {
+            alert('silakan pilih negara tujuan pengiriman');
+            $('#DDLShippingState').focus();
+            return false;
+        }
+        if ($('#txtShippingCity').css('display') == 'block') {
+            if (trimAll(shipCity) == '') {
+                alert('Silakan pilih kota pengiriman Anda');
+                $('#txtShippingCity').focus();
+                return false;
+            }
+        }
+
+        if ($('#DDLShippingCity').css('display') == 'block') {
+            if (trimAll(shipSelectCity) == '0') {
+                alert('Silakan pilih kota pengiriman Anda');
+                $('#DDLShippingCity').focus();
+                return false;
+            }
+        }
+
+        if ($('#txtshipKecatan').css('display') == 'block') {
+            if (trimAll(shipKecamatan) == '') {
+                alert('Silakan masukkan Kecamatan');
+                $('#txtshipKecatan').focus();
+                return false;
+            }
+        }
+
+        if ($('#ddlShipKecatan').css('display') == 'block') {
+            if (trimAll(shipSelectKecamatan) == '0') {
+                alert('Silakan pilih Kecamatan');
+                $('#ddlShipKecatan').focus();
+                return false;
+            }
+        }
+
+        if (trimAll(shipMobile) == '') {
+            alert('Silakan masukkan no tlp/hp tujuan pengiriman  anda');
+            $('#txtShippingMobile').focus();
+            return false;
+        }
+    }
+    return true;
+}
+
+
+/* Order Submit */
+
+function pgvalidation() {
+    if ($("input[name='payment_type']:checked").length == 0) {
+        alert("Silakan pilih opsi pembayaran");
+        $('#rbtnePay').focus();
+        return false;
+    }
+}
+
+
+
+/* Edit Profile */
+
+function doEditProfileValidation() {
+    var full_name = $('#txtName').val();
+    var ddlyear = $('#year').val();
+    var ddlmonth = $('#month').val();
+    var ddlday = $('#day').val();
+    var billName = $('#txtBillingName').val();
+    var billAddress1 = $('#txtBillingAddress1').val();
+    var billAddress2 = $('#txtBillingAddress2').val();
+    var billState = $('#DDLBillingState').val();
+    var billCity = $('#txtBillingCity').val();
+    var billSelectCity = $('#DDLBillingCity').val();
+    var billKecamatan = $('#txtBillKecatan').val();
+    var billSelectKecamatan = $('#ddlBillKecatan').val();
+    var billZipcode = $('#txtBillingPincode').val();
+    var billPhone = $('#txtBillingPhone').val();
+    var billMobile = $('#txtBillingMobile').val();
+
+    var shipName = $('#txtShippingName').val();
+    var shipAddress1 = $('#txtShippingAddress1').val();
+    var shipAddress2 = $('#txtShippingAddress2').val();
+    var shipState = $('#DDLShippingState').val();
+    var shipCity = $('#txtShippingCity').val();
+    var shipSelectCity = $('#DDLShippingCity').val();
+    var shipKecamatan = $('#txtshipKecatan').val();
+    var shipSelectKecamatan = $('#ddlShipKecatan').val();
+    var shipZipcode = $('#txtShippingPincode').val();
+    var shipPhone = $('#txtShippingPhone').val();
+    var shipMobile = $('#txtShippingMobile').val();
+
+    if (trimAll(full_name) == '') {
+        alert('Masukkan nama lengkap anda');
+        $('#txtName').focus();
+        return false;
+    }
+
+    if (trimAll(ddlyear) == '0') {
+        alert('Silakan Pilih Tahun');
+        $('#year').focus();
+        return false;
+    }
+    if (trimAll(ddlmonth) == '0') {
+        alert('Silakan pilih bulan');
+        $('#month').focus();
+        return false;
+    }
+    if (trimAll(ddlday) == '0') {
+        alert('Silakan pilih hari');
+        $('#day').focus();
+        return false;
+    }
+    if (trimAll(billName) == '') {
+        alert('Silakan masukkan nama pembayaran anda');
+        $('#txtBillingName').focus();
+        return false;
+    }
+    if (trimAll(billAddress1) == '') {
+        alert('silakan masukkan alamat pembayaran anda');
+        $('#txtBillingAddress1').focus();
+        return false;
+    }
+    if (trimAll(billState) == '0') {
+        alert('Silakan pilih propinsi anda tinggal');
+        $('#DDLBillingState').focus();
+        return false;
+    }
+    if ($('#txtBillingCity').css('display') == 'block') {
+        if (trimAll(billCity) == '') {
+            alert('Silakan pilih kota penagihan');
+            $('#txtBillingCity').focus();
+            return false;
+        }
+    }
+    if ($('#DDLBillingCity').css('display') == 'block') {
+        if (trimAll(billSelectCity) == '0') {
+            alert('Silakan pilih kota penagihan');
+            $('#DDLBillingCity').focus();
+            return false;
+        }
+    }
+    if ($('#txtBillKecatan').css('display') == 'block') {
+        if (trimAll(billKecamatan) == '') {
+            alert('Silakan masukkan Kecamatan');
+            $('#txtBillKecatan').focus();
+            return false;
+        }
+    }
+    if ($('#ddlBillKecatan').css('display') == 'block') {
+        if (trimAll(billSelectKecamatan) == '0') {
+            alert('Silakan pilih Kecamatan');
+            $('#ddlBillKecatan').focus();
+            return false;
+        }
+    }
+    //    if (trimAll(billZipcode) == '') {
+    //        alert('Silakan masukkan kode pos anda');
+    //        $('#txtBillingPincode').focus();
+    //        return false;
+    //    }
+    if (trimAll(billMobile) == '') {
+        alert('Silakan masukkan no tlp/hp sesuai pembelian anda');
+        $('#txtBillingMobile').focus();
+        return false;
+    }
+    if ($("#chkShippingFlag").is(":checked")) {
+        if (trimAll(shipName) == '') {
+            alert('Silakan masukkan nama untuk pengiriman anda');
+            $('#txtShippingName').focus();
+            return false;
+        }
+        if (trimAll(shipAddress1) == '') {
+            alert('silakan masukkan alamat pembayaran anda');
+            $('#txtShippingAddress1').focus();
+            return false;
+        }
+        if (trimAll(shipState) == '0') {
+            alert('Please select your shipping state');
+            $('#DDLShippingState').focus();
+            return false;
+        }
+        if ($('#txtShippingCity').css('display') == 'block') {
+            if (trimAll(shipCity) == '') {
+                alert('Silakan pilih kota pengiriman Anda');
+                $('#txtShippingCity').focus();
+                return false;
+            }
+        }
+        if ($('#DDLShippingCity').css('display') == 'block') {
+            if (trimAll(shipSelectCity) == '0') {
+                alert('Silakan pilih kota pengiriman Anda');
+                $('#DDLShippingCity').focus();
+                return false;
+            }
+        }
+
+        if ($('#txtshipKecatan').css('display') == 'block') {
+            if (trimAll(shipKecamatan) == '') {
+                alert('Silakan masukkan Kecamatan');
+                $('#txtshipKecatan').focus();
+                return false;
+            }
+        }
+
+        if ($('#ddlShipKecatan').css('display') == 'block') {
+            if (trimAll(shipSelectKecamatan) == '0') {
+                alert('Silakan pilih Kecamatan');
+                $('#ddlShipKecatan').focus();
+                return false;
+            }
+        }
+        //        if (trimAll(shipZipcode) == '') {
+        //            alert('Silakan masukkan kode pos tujuan pengiriman anda');
+        //            $('#txtShippingPincode').focus();
+        //            return false;
+        //        }
+        if (trimAll(shipMobile) == '') {
+            alert('Silakan masukkan no tlp/hp tujuan pengiriman  anda');
+            $('#txtShippingMobile').focus();
+            return false;
+        }
+    }
+    return true;
+}
+
+function doChange_PWDValidation() {
+    var oldpass = $('#txtOldPass').val();
+    var newpass = $('#txtNewPass').val();
+    var confirmpass = $('#txtConfirmPass').val();
+
+    if (trimAll(oldpass) == '') {
+        alert('Please enter your old password');
+        $('#txtOldPass').focus();
+        return false;
+    }
+    if (trimAll(newpass) == '') {
+        alert('Please enter your new password');
+        $('#txtNewPass').focus();
+        return false;
+    }
+    if (trimAll(confirmpass) == '') {
+        alert('Please verify your password');
+        $('#txtConfirmPass').focus();
+        return false;
+    }
+}
+
+function trimAll(sString) {
+    while (sString.substring(0, 1) == ' ') {
+        sString = sString.substring(1, sString.length);
+    }
+    while (sString.substring(sString.length - 1, sString.length) == ' ') {
+        sString = sString.substring(0, sString.length - 1);
+    }
+    return sString;
+}

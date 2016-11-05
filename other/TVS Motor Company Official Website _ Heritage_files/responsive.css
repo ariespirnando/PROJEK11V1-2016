@@ -1,0 +1,1183 @@
+
+.navbar-header
+{
+	position: absolute;
+	top: 36px;
+	right: 0px;
+}
+#topmenu .container
+{
+	position: relative;
+}
+ .subsBn
+    { width: 100%;
+        text-align: center;
+         font-size:13px;
+        
+        }
+
+.menumain
+{
+    background-color:white;
+}
+#desktoplogo{display: block;}
+#mobilelogo{display: none;}
+.desktopmenu{display: block !important;}
+.mobilemenu{display: none !important;}
+.heritage_left {
+    float: left;
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+}
+.heritage_right {
+    float: right;
+    width: 50%;
+    padding: 0px 0px 0px 20px;
+    text-align: right;
+}
+.tvsautom_right {
+    width: 50%;
+    float: right;
+}
+.tvsautom_left {
+        width: 100%;
+}
+.col_pad
+{
+   padding-right: 0px;
+    padding-left: 0px;
+}
+.inno_content_section p {
+    font-size: 16px;
+    padding: 10px 0px 70px 0px;
+}
+.inno_content_section_border {
+    border-bottom:1px dashed #ccc
+}
+.per_inner_section 
+{
+    margin:20px 0px 0px 0px;
+   
+}
+.per_inner_section_img img
+{
+    margin-top:3px;
+}
+.per_inner_section p {
+    font-size: 16px;
+    padding: 0px 20px 0px 0px;
+    text-align:justify;
+}
+.performace_section_two
+{
+    margin:50px 0px 0px 0px;
+}
+.inno_content_section_one {
+    padding: 20px 10px 0px 0px;
+}
+.product_bg_section
+{
+
+    background: url("../images/king-spec-banner.jpg") no-repeat;
+    background-position: top center;
+    height: 677px;
+    width: 100%;
+    position: relative;
+    background-size:100%;
+    }
+.product_type li
+{
+    
+}
+ .product_type ul li
+ {
+     list-style-type:none;
+     display:inline-block;
+     padding:10px;
+     font-size:15px;
+ }
+ .product_details_section {
+    position: absolute;
+    right: 10%;
+    top: 80px;
+    border: 1px solid white;
+}
+ .table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th {
+    background-color: #F3F3F3;
+}
+  .table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th {
+   border:0px ;
+}
+  .table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td
+  {
+      border:0px ;
+  }
+  .threewh_cont_h3
+  {
+      padding-bottom:20px;
+  }
+/*** Start Shrinking ***/
+
+@media (min-width: 1367px)
+{
+.ourcompany.dropdown-menu {
+    min-width: 980px !important;
+}
+.vehicles.dropdown-menu
+{
+    min-width: 980px !important;
+}
+.service.dropdown-menu {
+    min-width: 980px !important;
+}
+.racing.dropdown-menu {
+    min-width: 980px !important;
+}
+/*End of*/}/*1367px*/
+
+@media (min-width: 1200px) and (max-width: 1366px)
+{
+.container {
+    width: 1170px;
+}
+#topmenu {
+    background: #fff;
+    position: relative;
+}
+
+/*End of*/}/*1366px*/
+
+@media (min-width: 1025px) and (max-width: 1199px)
+{
+.container {
+    width: 970px;
+}
+#topmenu ul li a {
+    padding: 10px 10px 10px 10px;
+}
+.top_social
+{
+display: none;
+}
+.sty_cont_2
+{
+    margin-left:0px;
+}
+.cover_left p
+{
+    font-size:15px;
+}
+.sty_cont_3,.eff_cont_2,.eff_cont_4
+{
+    width:50%;
+}
+    .eff_cont_5,.sty_cont_2 {
+        float: none;
+        width: auto;
+      
+    }
+    .sty_cont_2 p
+    {
+         margin-left:20px;
+    }
+    .per_inner_section_img img {
+    margin-top: 30px;
+}
+    .inno_inner_4
+    {
+        margin-top:30px;
+        margin-left:0px;
+    }
+        .bot_menu
+{
+    height:0px !important;
+}
+            .awa_main
+{
+    height:auto;
+}
+.awa_inner_cont_1 p
+{
+    text-align:justify !important;
+}
+.racing.dropdown-menu.zindex
+{
+
+     margin:0px !important;
+}
+
+.service.dropdown-menu {
+    left: 0px !important;
+    min-width: 100% !important;
+}
+/*End of*/}/*1025px*/
+
+@media (min-width: 992px) and (max-width: 1024px)
+{
+.container {
+    width: 970px;
+}
+#topmenu ul li a {
+    padding: 10px 10px 10px 0px;
+}
+.top_social
+{
+display: none;
+}
+.per_inner_section_img img {
+    margin-top: 30px;
+}
+    .bot_menu
+{
+    height:0px !important;
+}
+        .awa_main
+{
+    height:auto;
+}
+.awa_inner_cont_1 p
+{
+    text-align:justify !important;
+}
+.racing.dropdown-menu.zindex
+{
+
+     margin:0px !important;
+}
+.global_pr {
+    width: 100%;
+    
+}
+.presenceFlags {
+    width: 108%;
+    
+}
+/*.service.dropdown-menu
+{
+    margin-left:850px;
+}*/
+.racing.dropdown-menu.zindex
+{
+
+     margin:0px !important;
+}
+/*.service.dropdown-menu.zindex
+{
+   
+    margin: 0px 0px 0px 850px !important;
+}*/
+.service.dropdown-menu {
+    left: 0px !important;
+    min-width: 100% !important;
+}
+.svg_logo {
+    position: absolute;
+    top: -16px;
+    left: 4px;
+}
+.fill_upformone .form-control {
+    width: 240px;
+  
+}
+.fill_upformthree .form-control {
+    width: 240px;
+    
+}
+.reset_right .btn-default {
+   
+    margin: 10px 0px 0px 10px;
+}
+/*End of*/}/*992px*/
+
+@media (min-width: 768px) and (max-width: 991px)
+{
+#desktoplogo{display: none;}
+#mobilelogo{display: block;}
+.container {
+    width: 750px;
+}
+#topmenu ul {
+    padding: 0px 0px 0px 0px;
+}
+#topmenu ul li a {
+    padding: 10px 10px 10px 10px;
+}
+.racing.dropdown-menu.zindex
+{
+    margin:0px !important;
+}
+
+#main_menu.navbar-inverse .navbar-nav>li>a {
+    font-size: 12px;
+    padding: 22px 5px 22px 5px;
+}
+.top_social {
+    margin: 0px 160px 0px 0px;
+    display: none;
+}
+#topmenu ul li a {
+    padding: 10px 10px 10px 10px !important;
+	font-size: 10px;
+	height: 36px !important;
+}
+.ourcompany.dropdown-menu ul li a {
+	font-size: 11px;
+    padding: 11px 10px 11px 10px;
+}
+.vehicles.dropdown-menu ul li a {
+    font-size: 11px;
+    padding: 11px 40px 12px 40px;
+}
+.racing.dropdown-menu {
+    left: -511px !important;
+    min-width: 750px !important;
+}
+.investor.dropdown-menu ul li a {
+	font-size: 11px;
+    padding: 11px 10px 11px 10px;
+}
+.investor.dropdown-menu {
+    left: -377px !important;
+	min-width: 750px !important;
+}
+li#main_menu_one
+{
+    padding:0px !important;
+}
+#main_menu.navbar-inverse .navbar-nav>li>a
+{
+     padding:22px 0px 22px 20px !important;
+}
+.inv_gray {
+    display: none;
+}
+.ourcompany.dropdown-menu {
+    left: 0px !important;
+    min-width: 750px !important;
+}
+.vehicles.dropdown-menu {
+    left: -127px !important;
+    min-width: 750px !important;
+}
+#main_menu .dropdown-menu li {
+    display: block;
+    float: left;
+}
+.ourcompany.dropdown-menu li a:after
+{
+display: none;
+}
+.investor.dropdown-menu li a:after
+{
+display: none;
+}
+#main_menu .dropdown-menu li span {
+    display: none;
+}
+    .eff_cont_5,.sty_cont_2 {
+        float: none; 
+       width: auto; 
+    }
+    .inno_content_section p,.cover_left p,.cover_left p {
+    font-size: 15px;
+}
+    .per_inner_section_img img {
+    margin-top: 83px;
+}
+    h4
+    {
+        font-size:16px;
+    }
+    .eff_cont_4 {
+        width: 305px;
+    }
+    .eff_img_2
+    {
+        margin-top:-250px;
+        float:right;
+    }
+    .cover_left p
+{
+    font-size:15px;
+}
+    .bot_menu
+{
+    height:0px !important;
+}
+    .awa_main
+{
+    height:auto;
+}
+.awa_inner_cont_1 p
+{
+    text-align:justify !important;
+}
+.awa_cont_h3,.awa_cont_h4
+{
+    padding-left:0px;
+}
+.awa_img_1 img
+{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+.ourcompany.dropdown-menu ul li a {
+    padding: 11px 5px 11px 5px !important;
+}
+ul.nav.navbar-nav.font_medium {
+    margin-left: -20px;
+}
+.obann_cont {
+    position:absolute;
+     top: 0px !important;
+    padding: 0px 0px 0px 40px;
+}
+.service.dropdown-menu li a:after {
+content: '';
+    width: 1px;
+    height: 10px;
+    background-color: #ccc;
+    display: none !important;
+    margin: 0px 0px 0px 40px;
+}
+#main_menu.navbar-inverse {
+    margin: 0px auto 0px auto;
+    width: 750px;
+}
+#main_menu .navbar-header {
+    width: 170px;
+    padding: 40px 20px 0px 0px;
+}
+#main_menu .dropdown-menu
+{
+	left: 48px;
+}
+.navbar-collapse .ourcompany.dropdown-menu {
+    left: 0px !important;
+    min-width: 750px !important;
+}
+.service.dropdown-menu {
+    left: 0px !important;
+    min-width: 750px !important;
+}
+body
+{
+	overflow-y: hidden;
+}
+.ourPresenceImage {
+    
+    
+    left: -110px;
+    
+}
+.global_pr {
+    width: 100%;
+   
+}
+.presenceFlags {
+    width: 105%;
+  
+}
+.nationalnames {
+    width: 100%;
+   
+    margin: 0px 0px 0px 0px;
+}
+.carousel-inner p{
+font-size: 12px;
+}
+.subsBn {
+   
+    font-size: 9px;
+}
+.svg_logo_mob{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+#leadership .nav-tabs {
+   
+    margin-top: 2px;
+}
+#leadership .nav-tabs > li > a {
+    
+    padding: 20px 30px 20px 11px;
+    font-size: 11px;
+}
+#xservice .nav-tabs > li > a {
+    width: 170px;
+   
+}
+#wterms .nav-tabs > li > a {
+    width: 170px;
+  
+}
+.lxp_form_left .form-control {
+   
+    width: 190px;
+  
+}
+.fill_upformone .form-control {
+    width: 220px;
+   
+}
+.fill_upformthree .form-control {
+    width: 220px;
+  
+}
+.reset_right .btn-default {
+   
+    margin: 10px 0px 0px 10px;
+}
+/*End of*/}/*768px*/
+
+@media (max-width: 767px)
+{
+#desktoplogo{display: none;}
+#mobilelogo{display: block;}
+#main_menu.navbar-inverse {
+    height: auto;
+	background: #EDEDED;
+	position: fixed;
+}
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+#main_menu .navbar-header {
+    background-color: #EDEDED;
+    width: 100%;
+    position: relative;
+    top: inherit;
+    right: inherit;
+	height: 63px;
+    padding: 0px 0px 0px 0px;
+	z-index: 10;
+}
+.sidebar-offcanvas
+{
+	background: #EDEDED;
+}
+#topmenu {
+    box-shadow: inherit;
+}
+.container {
+    width: 100%;
+}
+#topmenu ul {
+    padding: 0px 0px 0px 0px;
+}
+#topmenu li span {
+    display: none;
+}
+#topmenu ul li{
+   width: 100%;
+    display: block;
+}
+#topmenu ul li a {
+    padding: 7px 10px 7px 10px;
+   width: 100%;
+    display: block;
+}
+.container>.navbar-header, .container-fluid>.navbar-header, .container>.navbar-collapse, .container-fluid>.navbar-collapse {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.navbar-nav {
+    margin: 0px 0px;
+}
+.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+    max-height: inherit;
+}
+.navbar-collapse {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+#main_menu.navbar-inverse .navbar-nav>li>a {
+    padding: 8px 10px 8px 10px;
+	color: #1A3783;
+}
+#main_menu.navbar-inverse .navbar-nav>li>a:after {
+    display: none;
+}
+#main_menu .dropdown-menu
+{
+	height: auto;
+}
+.inv_gray {
+    display: none;
+}
+#main_menu .dropdown-menu li {
+    display: block;
+}
+.ourcompany.dropdown-menu ul li a {
+    padding: 5px 10px 5px 10px;
+    display: block;
+}
+.ourcompany.dropdown-menu li a:after
+{
+	display: none;
+}
+.ourcompany.dropdown-menu {
+    left: inherit !important;
+    min-width: 100% !important;
+}
+.vehicles.dropdown-menu {
+    left: inherit !important;
+    min-width: 100% !important;
+}
+.vehicles.dropdown-menu ul li a {
+    padding: 5px 10px 5px 10px;
+    display: block;
+}
+#main_menu .dropdown-menu li span {
+    display: none;
+}
+.racing.dropdown-menu {
+    left: inherit !important;
+    min-width: 100% !important;
+}
+.racing.dropdown-menu ul li a{
+    padding: 5px 10px 5px 10px;
+    display: block;
+}
+.racing.dropdown-menu li a:after
+{
+	display: none;
+}
+.investor.dropdown-menu {
+    left: inherit !important;
+    min-width: 100% !important;
+}
+.investor.dropdown-menu ul {
+    padding: 0px 0px 0px 0px;
+}
+.investor.dropdown-menu ul li a {
+ padding: 5px 10px 5px 10px;
+    display: block;
+}
+.investor.dropdown-menu li a:after
+{
+	display: none;
+}
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    background-color: #1A3783;
+}
+.navbar-inverse .navbar-toggle {
+    border-color: #1A3783;
+}
+.navbar-toggle {
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-bottom: 8px;
+    background-color: #1A3783;
+}
+span.glyphicon.glyphicon-remove
+{
+	color: #fff;
+	font-size: 14px;
+}
+#wrapper {
+    padding: 0px 0px 0px 0px;
+}
+#HomeCarousel.carousel .item {
+    height: auto;
+	padding-bottom: 160px;
+	min-height: inherit;
+	    background-color: #f4f4f4;
+}
+.ban_one_left,.ban_two_left,.ban_thee_left,.ban_auexpo_left,.ban_four_left {
+    float: none;
+    width: 100%;
+    padding: 10px 10px 0px 10px;
+    background: transparent;
+    color: #000;
+    position: absolute;
+    bottom: inherit;
+    left: 0px;
+    height: auto;
+    top: 0;
+}
+.ban_one_left h1,.ban_two_left h1,.ban_thee_left h1,.ban_auexpo_left h1,.ban_four_left h1 {
+    font-size: 21px;
+    margin: 0px 0px 0px 0px;
+    font-weight: bold;
+		color: #000;
+}
+.ban_one_left p,.ban_two_left p,.ban_thee_left p,.ban_auexpo_left p,.ban_four_left p {
+    font-size: 16px;
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+	color: #000;
+}
+.ban_tbtn {
+    margin: 10px 0px 0px 0px;
+}
+
+.ban_km {
+    margin: 10px 0px 10px 0px;
+}
+.ban_km a {
+    width: auto;
+    height: auto;
+    padding: 6px 10px 6px 10px;
+   font-size: 11px;
+   }
+.scoobtn a
+{
+    width: auto;
+    height: auto;
+    padding: 6px 10px 6px 10px;
+   font-size: 11px;
+   }
+#HomeCarousel .carousel-control.left {
+    top: 25%;
+	right: auto;
+	left: 0px;
+	    background: none;
+}
+#HomeCarousel .carousel-control {
+    top: 25%;
+}
+#HomeCarousel .carousel-control.right
+{
+	left: auto;
+	right: 0px;
+	top: 25%;
+	    background: none;
+}
+.ban_four_right
+{
+	display: none;
+}
+.sec_two_head {
+    padding: 10px 0px 10px 0px;
+}
+.sec_two_head h1:after {
+    left: 0px;
+    width: 100%;
+}
+.sec_two_head h1 {
+    font-size: 20px;
+}
+.inn_section_col {
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+}
+.h_press {
+    height: auto;
+	margin: 0px 0px 0px 0px;
+}
+.pr_read {
+    position: relative;
+    bottom: inherit;
+}
+.onlineser h1 {
+    font-size: 20px;
+}
+.top_social {
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+    padding: 10px 10px 0px 10px;
+}
+.bot_menu_left {
+	width: 100%;
+	 width: 80%;
+	margin: 0px auto;
+	float:none;
+}
+.bot_menu_left ul li {
+    display: block;
+    width: 100%;
+}
+.bot_menu_left ul li a {
+    padding: 10px 10px 10px 10px;
+    display: block;
+   
+}
+.bot_menu_left ul li a:before
+{
+	display: none;
+}
+.bot_menu {
+    height: auto;
+    background: #fff;
+}
+.bot_menu_right {
+    float: left;
+    width: 100%;
+    background-color: #F2F2F2;
+    padding: 2% 10% 2% 10%;
+}
+.wa_item img{width: 100%;}
+.warn_two img{width: 100%;}
+.h_press_top img{width: 100%;}
+.desktopmenu{display: none !important;}
+.mobilemenu{display: block !important;}
+#main_menu.navbar-inverse .navbar-nav>.open>a, #main_menu.navbar-inverse .navbar-nav>.open>a:hover, #main_menu.navbar-inverse .navbar-nav>.open>a:focus {
+    color: #fff;
+    background-color: #1A3783;
+}
+.obann_cont {
+   top: 0px;
+    padding: 10px 0px 0px 20px;
+}
+.obann_cont h1 {
+    font-size: 18px;
+    margin: 0px 0px 10px 0px;
+}
+.obann_cont ul li a {
+	font-size: 16px;
+}
+.cover_left {
+    width: 100%;
+    padding: 20px 10px 20px 10px;
+}
+.cover_left h1 {
+    margin: 0px 0px 10px 0px;
+    font-weight: bold;
+    font-size: 24px;
+}
+#WarnCarousel.carousel .item
+{
+	min-height: inherit;
+}
+.cover_left p {
+    font-size: 14px;
+    margin: 0px 0px 10px 0px;
+}
+.vone {
+    width: auto;
+ }
+ .vfore_left {
+   width: 100%;
+}
+.vfore_right {
+	width: 100%;
+	text-align: center;
+}
+.vfore_right img {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+	display: inline-block;
+}
+.cover_right {
+   width: 100%;
+       padding: 20px 10px 10px 10px;
+}
+.overh
+{
+	text-align: center;
+}
+.overh img
+{
+	display: inline-block;
+}
+.vission_left {
+	width: 100%;
+    padding: 10px 0px 10px 0px;
+}
+.vission_right {
+        width: 100%;
+    padding: 10px 0px 10px 0px;
+}
+.vission_cont {
+        height: auto;
+    margin: 0px 0px 0px 0px;
+}
+#leadership {
+    margin: 0px 0px 0px 0px;
+}
+#leadership .nav-tabs>li>a {
+    padding: 10px 5px 10px 5px;
+    font-size: 11px;
+}
+#leadership .tab-content>.tab-pane {
+    padding: 10px 0px 0px 0px;
+}
+.award_2 {
+     margin-top: 10px;
+}
+.inn_motion.people {
+    height: auto;
+}
+
+.heritage_right {
+    width: 100%;
+    padding: 0px 10px 10px 0px;
+
+}
+.tvsautom_right {
+    width: 100%;
+
+}
+.inn_tvsatt_left {
+    width: 100%;
+	padding: 10px 0px 0px 0px;
+ }
+ .inn_tvsatt_right {
+   width: 100%;
+   padding: 10px 0px 0px 0px;
+}
+.mile_year_right .form-control {
+    width: 100%;
+}
+.mile_year_right {
+	width: 100%;
+}
+.year_bikes {
+    padding: 33px 10px 0px 10px;
+}
+#topmenu ul li#ae_li a{position: relative; top: inherit;padding: 5px 10px;}
+.inno_inner_1,.inno_inner_2,.inno_inner_3,.inno_inner_4,.eff_cont_4
+{
+    margin:20px
+}
+.per_but
+{
+     width:100%;
+}
+.sty_cont_2
+{
+    width:100%;
+    margin-left:0px;
+    margin-top:10px;
+}
+.eff_cont_5,.sty_cont_3,.per_cont_2,.per_cont_1,.eff_cont_2,.inno_ul_1,.eff_cont_4
+{
+    width:100%;
+    margin-left:0px;
+}
+.eff_cont_5
+{
+    float:none;
+}
+.inno_ul_1
+{
+   padding:10px; 
+}
+.inno_ul_1 li
+{
+  
+    padding:10px 30px 10px  10px;
+    text-align:center;
+}
+#leadership .nav-tabs,.eff_cont_4
+{
+    width:100%;
+}
+#leadership .nav-tabs>li {
+    width: 100%;
+}
+.inno_content_section_border
+{
+    display:none;
+}
+.innovation_img_sec img,.sty_img_2 img,.eff_img_1 img
+{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.inno_content_section p {
+    padding: 10px 0px 5px 0px;
+}
+.per_inner_section_one p
+{
+    padding-left:0px !important;
+    padding-top:10px;
+}
+.cover_left p
+{
+    text-align:justify;
+}
+.threewh_sec_1
+{
+    width:100%;
+    margin:0px;
+}
+.threewh_cont_1 p,.auto_des p
+{
+    text-align:justify;
+    padding-right:10px;
+}
+.threewh_cont_1,.threewh_cont_2,.auto_des
+{
+    width:100%;
+}
+div#leadership {
+    margin-top: 50px;
+}
+
+.cover_right
+{
+    height:100% !important;
+}
+.awa_main
+{
+    height:auto;
+}
+.awa_inner_cont_1 p
+{
+    text-align:justify !important;
+}
+.awa_cont_h3
+{
+    padding-left:0px;
+}
+.awa_sec_4 {
+    padding-top: 25px;
+    margin: 0px auto;
+  
+}
+.awa_img_1 img
+{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+.awa_sec_inner_cont_1
+{
+    padding-left:0px;
+}
+.awa_sec_inner_img_1
+{
+    float:none;
+}
+.navbar-brand
+{
+    display: block;
+    float: left;
+    background-color: transparent !important;
+	padding: 12px 0px 0px 10px;
+}
+#topmenu {
+    background: -webkit-linear-gradient(left, #f4f4f4 100%, #fff 0%);
+}
+ul.dropdown-menu.zindex,.service.dropdown-menu.zindex,#main_menu .dropdown-menu {
+    margin: 0px !important;
+}
+.racing.dropdown-menu ul
+{
+    padding:0px !important;
+}
+li#race_sub_two,li#race_sub_three {
+    margin-left: 0px !important;
+}
+.racing.dropdown-menu.zindex {
+    margin: 0px !important;
+}
+.service.dropdown-menu ul 
+{
+    background-color:#f4f4f4;
+    width:100%;
+}
+body
+{
+	padding-top: 58px;
+}
+.global_pr {
+    width: 100%;
+    
+}
+.ourPresenceImage {
+  
+    left: -80px;
+  
+}
+.presenceFlags {
+    width: 100%;
+    
+}
+.nationalnames {
+    
+    margin: 0px 0px 0px 0px;
+}
+.svg_logo_mob{
+    width: 186px;
+    margin-top: -25px;
+    margin-left: 10px;
+}
+div#leadership {
+    margin-top: -9px;
+}
+#xservice .nav-tabs > li > a {
+    width: 1%;
+  
+}
+#wterms .nav-tabs > li > a {
+    width: 1%;
+   
+}
+.lxp_form_left .btn-default {
+   
+    margin-top: 15px;
+}
+.overh_cont p {
+    
+    font-size: 8px;
+}
+.follow_right {
+    position: static !important;
+   
+}
+.Spc_banner {
+  
+    width: 80%;
+    
+}
+/*End of*/}/*767px*/
+
+@media (max-width: 640px)
+{
+/*End of*/}/*480px*/
+
+
+
+@media (max-width: 480px)
+{
+    .inno_ul_1 li
+{
+    float:none;
+    padding:10px;
+    text-align:center;
+}
+    .inno_ul_1 {
+    width:100%;
+    height:auto;
+    }
+    .inno_inner_1,.inno_inner_2,.inno_inner_3,.inno_inner_4,.eff_cont_4
+{
+    margin:20px 20px 30px 30px;
+}
+        .bot_menu
+{
+    height:0px !important;
+}
+
+/*End of*/}/*480px*/
+
+@media (max-width: 320px)
+{
+    .inno_ul_1 li
+{
+    float:none;
+    padding:10px;
+    text-align:center;
+}
+    .inno_ul_1 {
+    width:100%;
+    height:auto;
+    }
+    .inno_inner_1,.inno_inner_2,.inno_inner_3,.inno_inner_4,.eff_cont_4
+{
+    margin:20px 20px 30px 30px;
+}
+.jupiter_cont_left.victor {
+    width: 100%;
+       padding: 0px 0px 0px 10px!important;
+}
+/*End of*/}/*320px*/

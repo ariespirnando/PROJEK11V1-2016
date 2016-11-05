@@ -1,0 +1,179 @@
+$('document').ready(function () {
+
+    $(".dropdown-toggle,.dropdown-menu").hover(function () {
+        $(this).parent(".dropdown").addClass("open");
+        $(this).parent(".dropdown").find(".dropdown-menu").addClass("zindex");
+    }, function () {
+        $(this).parent(".dropdown").removeClass("open");
+        $(this).parent(".dropdown").find(".dropdown-menu").removeClass("zindex");
+    });
+
+    // top menu
+    if (window.location.href.indexOf("default.aspx") > -1) {
+        $('#top_menu_one a').addClass('active');
+    }
+    if (window.location.href.indexOf("contact-us.aspx") > -1) {
+        $('#top_menu_two a').addClass('active');
+    }
+    if (window.location.href.indexOf("dealer-locator.aspx") > -1) {
+        $('#top_menu_four a').addClass('active');
+    }
+    if (window.location.href.indexOf("buy-testride.aspx") > -1) {
+        $('#top_menu_five a').addClass('active');
+    }
+
+
+    if (window.location.href.indexOf("tvs-in-brief.aspx") > -1) {
+        $('#main_menu_one').addClass('active');
+        $('#sub_one a').addClass('active');
+        $('#main_menu_one .dropdown-menu').addClass('stay');
+    }
+
+    if (window.location.href.indexOf("mission-vision.aspx") > -1) {
+        $('#main_menu_one').addClass('active');
+        $('#sub_two a').addClass('active');
+        $('#main_menu_one .dropdown-menu').addClass('stay');
+    }
+    if (window.location.href.indexOf("leadership.aspx") > -1) {
+        $('#main_menu_one').addClass('active');
+        $('#sub_three a').addClass('active');
+        $('#main_menu_one .dropdown-menu').addClass('stay');
+    }
+    if (window.location.href.indexOf("heritage.aspx") > -1) {
+        $('#main_menu_one').addClass('active');
+        $('#sub_four a').addClass('active');
+        $('#main_menu_one .dropdown-menu').addClass('stay');
+    }
+    if (window.location.href.indexOf("milestones.aspx") > -1) {
+        $('#main_menu_one').addClass('active');
+        $('#sub_five a').addClass('active');
+        $('#main_menu_one .dropdown-menu').addClass('stay');
+    }
+    if (window.location.href.indexOf("innovations.aspx") > -1) {
+        $('#main_menu_one').addClass('active');
+        $('#sub_six a').addClass('active');
+        $('#main_menu_one .dropdown-menu').addClass('stay');
+    }
+    if (window.location.href.indexOf("manufacturing-excellence.aspx") > -1) {
+        $('#main_menu_one').addClass('active');
+        $('#sub_seven a').addClass('active');
+        $('#main_menu_one .dropdown-menu').addClass('stay');
+    }
+	 if (window.location.href.indexOf("performance.aspx") > -1) {
+        $('#main_menu_one').addClass('active');
+        $('#sub_six a').addClass('active');
+        $('#main_menu_one .dropdown-menu').addClass('stay');
+    }
+	if (window.location.href.indexOf("awards.aspx") > -1) {
+        $('#main_menu_one').addClass('active');
+        $('#sub_eight a').addClass('active');
+        $('#main_menu_one .dropdown-menu').addClass('stay');
+    }
+
+    // vehicles menu
+
+    if (window.location.href.indexOf("products.aspx") > -1) {
+        $('#main_menu_two').addClass('active');
+        $('#v_sub_one a').addClass('active');
+        $('#main_menu_two .dropdown-menu').addClass('stay');
+    }
+    if (window.location.href.indexOf("product-motorbikes.aspx") > -1) {
+        $('#main_menu_two').addClass('active');
+        $('#v_sub_two a').addClass('active');
+        $('#main_menu_two .dropdown-menu').addClass('stay');
+    }
+    if (window.location.href.indexOf("product-threewheeler.aspx") > -1) {
+        $('#main_menu_two').addClass('active');
+        $('#v_sub_three a').addClass('active');
+        $('#main_menu_two .dropdown-menu').addClass('stay');
+    }
+	 if (window.location.href.indexOf("threewheeler-tech.aspx") > -1) {
+        $('#main_menu_two').addClass('active');
+        $('#v_sub_three a').addClass('active');
+        $('#main_menu_two .dropdown-menu').addClass('stay');
+    }
+    if (window.location.href.indexOf("product-moped.aspx") > -1) {
+        $('#main_menu_two').addClass('active');
+        $('#v_sub_four a').addClass('active');
+        $('#main_menu_two .dropdown-menu').addClass('stay');
+    }
+
+    // racing menu
+
+    if (window.location.href.indexOf("racing.aspx") > -1) {
+        $('#main_menu_three').addClass('active');
+        $('#race_sub_one a').addClass('active');
+        $('#main_menu_three .dropdown-menu').addClass('stay');
+    }
+    if (window.location.href.indexOf("winning.aspx") > -1) {
+        $('#main_menu_three').addClass('active');
+        $('#race_sub_two a').addClass('active');
+        $('#main_menu_three .dropdown-menu').addClass('stay');
+    }
+    if (window.location.href.indexOf("dakar.aspx") > -1) {
+        $('#main_menu_three').addClass('active');
+        $('#race_sub_three a').addClass('active');
+        $('#main_menu_three .dropdown-menu').addClass('stay');
+    }
+
+    // tvs global
+
+    if (window.location.href.indexOf("tvs-global.aspx") > -1) {
+        $('#main_menu_four').addClass('active');
+        $('#global_sub_one a').addClass('active');
+        $('#main_menu_four .dropdown-menu').addClass('stay');
+    }
+
+    // investor menu
+    if (window.location.href.indexOf("investor-relations.aspx") > -1) {
+        $('#main_menu_five').addClass('active');
+        $('#inv_sub_one a').addClass('active');
+        $('#main_menu_five .dropdown-menu').addClass('stay');
+    }
+    if (window.location.href.indexOf("corporate-governance.aspx") > -1) {
+        $('#main_menu_five').addClass('active');
+        $('#inv_sub_two a').addClass('active');
+        $('#main_menu_five .dropdown-menu').addClass('stay');
+    }
+    if (window.location.href.indexOf("postal-ballot-notices.aspx") > -1) {
+        $('#main_menu_five').addClass('active');
+        $('#inv_sub_three a').addClass('active');
+        $('#main_menu_five .dropdown-menu').addClass('stay');
+    }
+    if (window.location.href.indexOf("address-for-communication.aspx") > -1) {
+        $('#main_menu_five').addClass('active');
+        $('#inv_sub_four a').addClass('active');
+        $('#main_menu_five .dropdown-menu').addClass('stay');
+    }
+
+    // media menu
+    if (window.location.href.indexOf("media-press.aspx") > -1) {
+        $('#main_menu_six').addClass('active');
+    }
+	// Service menu
+     if (window.location.href.indexOf("service-extended-warranty.aspx") > -1) {
+        $('#main_menu_seven').addClass('active');
+        $('#service_sub_one a').addClass('active');
+        $('#main_menu_seven .dropdown-menu').addClass('stay');
+    }
+	if (window.location.href.indexOf("xpress-service.aspx") > -1) {
+        $('#main_menu_seven').addClass('active');
+        $('#service_sub_two a').addClass('active');
+        $('#main_menu_seven .dropdown-menu').addClass('stay');
+    }
+	if (window.location.href.indexOf("http://www.tvsmotor.com/servicebooking/2016/service-booking-home.aspx") > -1) {
+        $('#main_menu_seven').addClass('active');
+        $('#service_sub_three a').addClass('active');
+        $('#main_menu_seven .dropdown-menu').addClass('stay');
+    }
+	if (window.location.href.indexOf("mobile-app.aspx") > -1) {
+        $('#main_menu_seven').addClass('active');
+        $('#service_sub_four a').addClass('active');
+        $('#main_menu_seven .dropdown-menu').addClass('stay');
+    }
+	if (window.location.href.indexOf("contact-us.aspx") > -1) {
+        $('#main_menu_seven').addClass('active');
+        $('#service_sub_five a').addClass('active');
+        $('#main_menu_seven .dropdown-menu').addClass('stay');
+    }
+});

@@ -1,0 +1,1817 @@
+﻿/*** Start Shrinking ***/
+
+@media (min-width: 1367px)
+{
+
+/*End of*/}/*1367px*/
+
+@media (min-width: 1200px) and (max-width: 1366px)
+{
+.apache_cont_right {
+    padding: 458px 83px 0px 0px;
+}
+.pept_innright {
+    padding: 184px 0px 0px 0px;
+}
+/*End of*/}/*1366px*/
+
+@media (min-width: 1025px) and (max-width: 1199px)
+{
+.container {
+    width: 970px;
+}
+.scooty_cont_left h1 {
+    font-size: 38px;
+}
+.jupiter_cont_left h1 {
+    font-size: 38px;
+}
+.pept_cont_left h1 {
+    font-size: 38px;
+}
+.scooty_cont_right {
+    padding: 75px 50px 0px 0px;
+}
+.pept_innright {
+    padding: 144px 0px 0px 0px;
+}
+.pept_cont_righttwo {
+    padding: 0px 50px 0px 0px;
+}
+.apache_cont_right {
+    padding: 345px 50px 0px 0px;
+}
+.phoenix_cont_right {
+    padding: 72px 50px 0px 0px;
+}
+.phoenix_innright .besooter:last-child {
+visibility:hidden;
+}
+.tvsxl_cont_left {
+    padding: 50px 0px 0px 40px;
+}
+#main_menu.navbar-inverse .navbar-nav>li>a {
+    font-size: 13px;
+    padding: 22px 5px 22px 10px;
+}
+#main_menu.navbar-inverse .navbar-nav>li>a:after {
+    margin: 0px 0px 0px 15px;
+}
+.navbar-nav>li {
+    position: static;
+}
+.ourcompany.dropdown-menu {
+    min-width: 100% !important;
+}
+.vehicles.dropdown-menu {
+    left: 0 !important;
+    min-width: 100% !important;
+}
+.racing.dropdown-menu {
+    left: 0 !important;
+    min-width: 100% !important;
+}
+.investor.dropdown-menu {
+    left: 0 !important;
+    min-width: 100% !important;
+}
+#banner_one, #banner_two, #banner_three, #three_wheeler, #home_moped, #home_expo, #banner_four {
+    height: 548px;
+    background-size: contain;
+}
+#HomeCarousel .carousel-control.left {
+    top: 35%;
+}
+.banforonel {
+width: 50%;
+padding: 11px 0px 0px 0px;
+}
+.banforloner {
+    width: 50%;
+}
+.ban_one_left h1 {
+    font-size: 40px;
+}
+.ban_one_left p {
+    font-size: 22px;
+    width: 385px;
+}
+.ban_two_left h1 {
+    font-size: 40px;
+}
+.ban_thee_left h1 {
+    font-size: 40px;
+}
+.ban_auexpo_left {
+    padding: 200px 0px 0px 40px;
+}
+.ban_auexpo_left h1 {
+    font-size: 40px;
+}
+.ban_four_left h1 {
+    font-size: 40px;
+}
+.sec_two_head h1 {
+    font-size: 24px;
+}
+.wa_item h1 {
+    bottom: 45px;
+    font-size: 20px;
+}
+.onlineser h1 {
+    font-size: 20px;
+}
+.h_press {
+    height: 401px;
+}
+.h_twit {
+    height: 401px;
+}
+.h_press_bot h2 {
+    font-size: 17px;
+}
+.pr_read {
+    bottom: 10px;
+}
+.twfet {
+    bottom: 10px;
+}
+.bot_menu_left ul li a {
+    padding: 25px 20px 25px 12px;
+}
+.bot_menu_left ul li a:before {
+    margin: 0px 5px 0px 0px;
+}
+.bot_menu_right {
+    padding: 15px 0px 15px 15px;
+}
+.foll_left {
+    font-size: 11px;
+}
+.cover_left h1 {
+    margin: 0px 0px 20px 0px;
+    font-size: 24px;
+}
+.vission_left {
+    padding: 0px 15px 0px 0px;
+}
+.vission_right {
+    padding: 0px 0px 0px 15px;
+}
+.inn_motion p {
+    padding: 0px 0px 15px 0px;
+}
+.venu {
+    font-size: 16px;
+}
+.year_bikes {
+    padding: 33px 0px 0px 0px;
+}
+.inny_bik_center {
+    height: 235px;
+}
+.inny_bik_center p img{
+display: inline-block;
+}
+.inny_bik_right {
+    height: 235px;
+}
+.inny_bik_right p {
+    font-size: 16px;
+}
+.inny_bikt_left {
+    height: 235px;
+}
+.inny_bikt_left p {
+    font-size: 16px;
+}
+.inny_bikt_center {
+    height: 235px;
+}
+.inny_bikt_center p img{
+display: inline-block;
+}
+.center_dot {
+    height: 1180px;
+    top: 155px;
+    left: 357px;
+}
+.center_dot.year2012 {
+    height: 476px;
+}
+.center_dot.year2008 {
+    height: 1425px;
+}
+.center_dot.year2007 {
+    height: 236px;
+}
+.center_dot.year2004 {
+    height: 715px;
+}
+.center_dot.year1994 {
+    height: 143px;
+    top: 84px;
+}
+.fincontbann {
+    padding: 27px 0px 0px 0px;
+}
+.fincontbann p {
+    font-size: 20px;
+}
+.unaudit_left {
+    width: 100%;
+}
+.unaudit_right {
+display:none;
+}
+.cover_right {
+    padding: 70px 15px 0px 15px;
+}
+.address p
+{
+margin: 0px 0px 3px 0px;
+font-size: 15px;  
+}
+.inn_press h2 {
+    font-size: 22px;
+}
+.contact_left {
+    width: 60%;
+    padding: 0px 20px 0px 0px;
+}
+.contact_right {
+    width: 40%;
+    padding: 0px 0px 0px 20px;
+}
+.obann_cont {
+    padding: 75px 0px 0px 40px;
+}
+.btride_tleft {
+    width: 45%;
+}
+.btride_tleft .checkbox {
+    padding: 0px 25px 0px 0px;
+}
+.btride_tright {
+    width: 55%;
+}
+.btride_ltext {
+    width: 30%;
+}
+.btride_rtt {
+    width: 70%;
+    padding: 0px 0px 0px 10px;
+}
+.btride_cleft {
+    width: 50%;
+}
+.btristate {
+    width: 50%;
+}
+.btristate .form-control {
+    width: 100%;
+}
+.btride_cright {
+    width: 50%;
+}
+.detailname {
+    width: 25%;
+}
+.detailname .form-control {
+    width: 100%;
+}
+.detailbtn {
+    width: 25%;
+}
+.detailbtn .btn-default {
+    width: 100%;
+}
+/*End of*/}/*1025px*/
+
+@media (min-width: 992px) and (max-width: 1024px)
+{
+.container {
+    width: 970px;
+}
+.scooty_cont_left h1 {
+    font-size: 38px;
+}
+.jupiter_cont_left h1 {
+    font-size: 38px;
+}
+.pept_cont_left h1 {
+    font-size: 38px;
+}
+.scooty_cont_right {
+    padding: 75px 50px 0px 0px;
+}
+.pept_innright {
+    padding: 144px 0px 0px 0px;
+}
+.pept_cont_righttwo {
+    padding: 0px 50px 0px 0px;
+}
+.apache_cont_right {
+    padding: 345px 50px 0px 0px;
+}
+.phoenix_cont_right {
+    padding: 72px 50px 0px 0px;
+}
+.phoenix_innright .besooter:last-child {
+visibility:hidden;
+}
+.tvsxl_cont_left {
+    padding: 50px 0px 0px 40px;
+}
+#main_menu.navbar-inverse .navbar-nav>li>a {
+    font-size: 13px;
+    padding: 22px 5px 22px 10px;
+}
+#main_menu.navbar-inverse .navbar-nav>li>a:after {
+    margin: 0px 0px 0px 15px;
+}
+.navbar-nav>li {
+    position: static;
+}
+.ourcompany.dropdown-menu {
+    min-width: 100% !important;
+}
+.vehicles.dropdown-menu {
+    left: 0 !important;
+    min-width: 100% !important;
+}
+.racing.dropdown-menu {
+    left: 0 !important;
+    min-width: 100% !important;
+}
+.investor.dropdown-menu {
+    left: 0 !important;
+    min-width: 100% !important;
+}
+#HomeCarousel .carousel-control.left {
+    top: 35%;
+}
+.banforonel {
+width: 50%;
+padding: 11px 0px 0px 0px;
+}
+.banforloner {
+    width: 50%;
+}
+.ban_one_left h1 {
+    font-size: 40px;
+}
+.ban_one_left p {
+    font-size: 22px;
+    width: 385px;
+}
+.ban_two_left h1 {
+    font-size: 40px;
+}
+.ban_thee_left h1 {
+    font-size: 40px;
+}
+.ban_auexpo_left {
+    padding: 200px 0px 0px 40px;
+}
+.ban_auexpo_left h1 {
+    font-size: 40px;
+}
+.ban_four_left h1 {
+    font-size: 40px;
+}
+.sec_two_head h1 {
+    font-size: 24px;
+}
+.wa_item h1 {
+    bottom: 45px;
+    font-size: 20px;
+}
+.onlineser h1 {
+    font-size: 20px;
+}
+.h_press {
+    height: 401px;
+}
+.jupiter_cont_left {
+   
+    padding: 446px 0px 0px 40px;
+}
+.h_twit {
+    height: 401px;
+}
+.h_press_bot h2 {
+    font-size: 17px;
+}
+.pr_read {
+    bottom: 10px;
+}
+.twfet {
+    bottom: 10px;
+}
+.bot_menu_left ul li a {
+    padding: 25px 20px 25px 12px;
+}
+.bot_menu_left ul li a:before {
+    margin: 0px 5px 0px 0px;
+}
+.bot_menu_right {
+    padding: 15px 0px 15px 15px;
+}
+.foll_left {
+    font-size: 11px;
+}
+.cover_left h1 {
+    margin: 0px 0px 20px 0px;
+    font-size: 24px;
+}
+.vission_left {
+    padding: 0px 15px 0px 0px;
+}
+.vission_right {
+    padding: 0px 0px 0px 15px;
+}
+.inn_motion p {
+    padding: 0px 0px 15px 0px;
+}
+.venu {
+    font-size: 16px;
+}
+.year_bikes {
+    padding: 33px 0px 0px 0px;
+}
+.inny_bik_center {
+    height: 235px;
+}
+.inny_bik_center p img{
+display: inline-block;
+}
+.inny_bik_right {
+    height: 235px;
+}
+.inny_bik_right p {
+    font-size: 16px;
+}
+.inny_bikt_left {
+    height: 235px;
+}
+.inny_bikt_left p {
+    font-size: 16px;
+}
+.inny_bikt_center {
+    height: 235px;
+}
+.inny_bikt_center p img{
+display: inline-block;
+}
+.center_dot {
+    height: 1180px;
+    top: 155px;
+    left: 357px;
+}
+.center_dot.year2012 {
+    height: 476px;
+}
+.center_dot.year2008 {
+    height: 1425px;
+}
+.center_dot.year2007 {
+    height: 236px;
+}
+.center_dot.year2004 {
+    height: 715px;
+}
+.center_dot.year1994 {
+    height: 143px;
+    top: 84px;
+}
+.fincontbann {
+    padding: 27px 0px 0px 0px;
+}
+.fincontbann p {
+    font-size: 20px;
+}
+.unaudit_left {
+    width: 100%;
+}
+.unaudit_right {
+display:none;
+}
+.cover_right {
+    padding: 70px 15px 0px 15px;
+}
+.address p
+{
+margin: 0px 0px 3px 0px;
+font-size: 15px;  
+}
+.inn_press h2 {
+    font-size: 22px;
+}
+.contact_left {
+    width: 60%;
+    padding: 0px 20px 0px 0px;
+}
+.contact_right {
+    width: 40%;
+    padding: 0px 0px 0px 20px;
+}
+.obann_cont {
+    padding: 75px 0px 0px 40px;
+}
+.btride_tleft {
+    width: 45%;
+}
+.btride_tleft .checkbox {
+    padding: 0px 25px 0px 0px;
+}
+.btride_tright {
+    width: 55%;
+}
+.btride_ltext {
+    width: 30%;
+}
+.btride_rtt {
+    width: 70%;
+    padding: 0px 0px 0px 10px;
+}
+.btride_cleft {
+    width: 50%;
+}
+.btristate {
+    width: 50%;
+}
+.btristate .form-control {
+    width: 100%;
+}
+.btride_cright {
+    width: 50%;
+}
+.detailname {
+    width: 25%;
+}
+.detailname .form-control {
+    width: 100%;
+}
+.detailbtn {
+    width: 25%;
+}
+.detailbtn .btn-default {
+    width: 100%;
+}
+.become_butt .btn-lg, .btn-group-lg>.btn {
+    padding: 5px 0px;
+    font-size: 12px;
+    
+}
+.become_butt .btn-primary {
+    
+    width: 132px;
+    
+}
+.cont_newsletter  .btn {
+   
+    padding: 6px 7px;}
+	
+/*End of*/}/*992px*/
+
+@media (min-width: 768px) and (max-width: 991px)
+{
+.container {
+    width: 750px;
+}
+.scooty_cont_left {
+    padding: 50px 0px 0px 30px;
+    width: 75%;
+}
+.scooty_cont_left h1 {
+    font-size: 36px;
+}
+.scooty_cont_right {
+    padding: 50px 0px 0px 0px;
+    width: 25%;
+}
+.jupiter_cont_left {
+    padding: 310px 0px 0px 30px;
+}
+.jupiter_cont_left h1 {
+    font-size: 36px;
+    margin: 0px 0px 45px 0px;
+}
+.besooter {
+    width: 70%;
+}
+.pept_cont_left {
+    padding: 27px 0px 0px 30px;
+}
+.pept_cont_left h1 {
+    font-size: 36px;
+}
+.pept_cont_righttwo {
+    padding: 50px 0px 0px 0px;
+}
+.pept_innright {
+    padding: 0px 0px 0px 0px;
+}
+.zyada p {
+    visibility: hidden;
+}
+.apache_cont_right {
+    padding: 291px 0px 0px 0px;
+    width: 25%;
+}
+.phoenix_cont_left {
+    width: 75%;
+    padding: 60px 0px 0px 40px;
+}
+.phoenix_cont_left h1 {
+    font-size: 38px;
+}
+.phoenix_cont_right {
+    padding: 72px 0px 0px 0px;
+    width: 25%;
+}
+.phoenix_innright .besooter:last-child {
+visibility:hidden;
+}
+.auto_cont_right {
+    padding: 70px 0px 0px 0px;
+    width: 25%;
+}
+.tvsxl_cont_left {
+    width: 75%;
+    padding: 35px 0px 0px 20px;
+}
+.tvsxl_cont_right {
+    width: 25%;
+}
+.tvsxl_cont_left h1 {
+    font-size: 36px;
+}
+.tvsxl_cont_right .auto_cont_right {
+    width: 100%;
+}
+.winning {
+    height: auto;
+}
+.cover_left h1 {
+    font-size: 20px;
+}
+.obann_cont {
+    top: 0px;
+    padding: 0px 0px 0px 40px;
+}
+.tab_dakar {
+    width: 100%;
+}
+.fincontbann {
+    display: none;
+}
+.unaudit_right {
+    display: none;
+}
+.coporate {
+    height: auto;
+}
+.unaudit_left {
+    float: none;
+    width: 100%;
+}
+.address p
+{
+margin: 0px 0px 0px 0px;
+font-size: 15px;  
+}
+.inn_press h2 {
+    font-size: 22px;
+}
+.contact_left {
+    width: 100%;
+    padding: 0px 0px 20px 0px;
+    border-bottom: 1px dashed #ccc;
+}
+.contact_right {
+    width: 100%;
+    padding: 20px 0px 0px 0px;
+        border-left: none;
+}
+.navbar-nav>li {
+    position: static;
+}
+.ourcompany.dropdown-menu {
+    min-width: 100% !important;
+}
+.ourcompany.dropdown-menu ul {
+    padding: 0px 0px 0px 0px;
+}
+.ourcompany.dropdown-menu ul li a {
+    font-size: 11px;
+    padding: 11px 2px 11px 4px;
+}
+.ourcompany.dropdown-menu li a:after {
+    margin: 0px 0px 0px 14px;
+}
+.vehicles.dropdown-menu {
+    left: 0px !important;
+    min-width: 100% !important;
+}
+.vehicles.dropdown-menu ul li a {
+    font-size: 11px;
+    padding: 11px 50px 12px 50px;
+}
+.racing.dropdown-menu {
+    left: 0px !important;
+    min-width: 100% !important;
+}
+.racing.dropdown-menu ul li a {
+    font-size: 11px;
+    padding: 11px 10px 11px 10px;
+}
+.investor.dropdown-menu {
+    left: 0px !important;
+    min-width: 100% !important;
+}
+.investor.dropdown-menu ul {
+    padding: 0px 0px 0px 0px;
+}
+.investor.dropdown-menu li a:after {
+    margin: 0px 0px 0px 20px;
+}
+#HomeCarousel .carousel-control.left {
+    top: 32%;
+}
+.ban_one_left {
+    width: 100%;
+    padding: 40px 0px 0px 20px;
+}
+.ban_one_left h1 {
+    font-size: 36px;
+}
+.ban_one_left p {
+    font-size: 22px;
+        width: 300px;
+}
+.ban_two_left {
+    padding: 50px 0px 0px 20px;
+}
+.ban_two_left h1 {
+    font-size: 36px;
+}
+.ban_thee_left {
+    padding: 50px 0px 0px 20px;
+}
+.ban_thee_left h1 {
+    font-size: 36px;
+}
+.ban_auexpo_left {
+    padding: 150px 0px 0px 40px;
+}
+.ban_auexpo_left h1 {
+    font-size: 32px;
+}
+.ban_auexpo_left p {
+    font-size: 24px;
+    width: 300px;
+}
+.ban_four_left {
+    padding: 50px 0px 0px 20px;
+}
+.ban_four_left h1 {
+    font-size: 36px;
+}
+.ban_four_right {
+    padding: 40px 0px 0px 0px;
+}
+.banforonel {
+    padding: 18px 0px 0px 0px;
+    width: 50%;
+}
+.banforloner {
+    float: left;
+    width: 50%;
+}
+.wa_item h1 {
+    bottom: 40px;
+    font-size: 16px;
+}
+.h_press_bot {
+    padding: 20px 10px 20px 10px;
+}
+.h_press_bot h3 
+{
+        font-size: 12px;
+    margin: 0px 0px 10px 0px;
+}
+.h_press_bot h2 {
+    font-size: 13px;
+}
+.h_press_bot h2 a {
+    font-size: 13px;
+}
+.h_press_bot h4 {
+    font-size: 12px;
+margin: 10px 0px 1px 0px;
+}
+.h_press_bot p {
+    font-size: 11px;
+}
+.h_press {
+    height: 310px;
+}
+.h_twit {
+    height: 310px;
+}
+.pr_read a {
+    font-size: 11px;
+}
+.onlineser {
+    left: 0;
+    text-align: center;
+}
+.onlineser h1 {
+    font-size: 16px;
+}
+.onlineser p {
+    font-size: 12px;
+}
+.pr_read {
+    bottom: 5px;
+}
+.twfet {
+    bottom: 5px;
+}
+.sec_two_head h1 {
+    font-size: 22px;
+}
+.sec_two_head h1:after {
+    bottom: -15px;
+}
+.bot_menu_left ul li a {
+    font-size: 11px;
+    padding: 20px 4px 20px 3px;
+    background: transparent;
+}
+.bot_menu_left ul li a:before {
+    margin: 0px 10px 0px 0px;
+}
+.foll_left {
+    display: none;
+}
+.foll_right {
+    width: 100%;
+    padding: 0px 0px 0px 10px;
+}
+.bot_menu {
+    height: 57px;
+}
+.bot_menu_right {
+    padding: 12px 0px 12px 15px;
+}
+.investor.dropdown-menu ul li a {
+    font-size: 11px;
+}
+.cover_right {
+    padding: 70px 15px 0px 15px;
+}
+.racing h4 {
+    font-size: 14px;
+}
+.vission_left {
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+}
+.vission_cont {
+    height: auto;
+    margin: 0px 0px 20px 0px;
+    padding: 0px 0px 20px 0px;
+}
+.vission_right {
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+}
+.vission_cont.non_bor {
+    border-bottom: 1px dashed #ccc;
+}
+.vfore_left {
+    width: 100%;
+}
+.vfore_right {
+    width: 100%;
+        text-align: center;
+}
+.vfore_right img {
+    margin: 0px 0px 0px 0px;
+    display: inline-block;
+    padding: 0px 0px 0px 0px;
+}
+.inn_motion p {
+    padding: 0px 0px 10px 0px;
+    font-size: 14px;
+}
+.venu {
+    font-size: 16px;
+}
+.award_1 {
+    width: 100%;
+}
+.year_bikes {
+    padding: 33px 0px 0px 0px;
+}
+.inny_bik_center {
+    height: 179px;
+}
+.inny_bik_center p {
+    padding: 0px 15px 0px 15px;
+}
+.inny_bik_right {
+    height: 179px;
+}
+.inny_bik_right p {
+    font-size: 14px;
+}
+.inny_bikt_left {
+    height: 179px;
+}
+.inny_bikt_left p {
+    font-size: 14px;
+}
+.inny_bikt_center {
+    height: 179px;
+}
+.inny_bikt_center p {
+    padding: 0px 15px 0px 15px;
+}
+.center_dot {
+    height: 907px;
+    top: 118px;
+    left: 269px;
+}
+.center_dot.year2012 {
+    height: 370px;
+}
+.center_dot.year2008 {
+    height: 1093px;
+}
+.center_dot.year2007 {
+    height: 189px;
+}
+.center_dot.year2004 {
+    height: 550px;
+}
+.center_dot.year1994 {
+    height: 128px;
+    top: 68px;
+}
+.tvsautom_left h3 {
+    font-size: 16px;
+    padding: 0px 0px 15px 0px;
+}
+.tvsautom_left p {
+    font-size: 15px;
+    margin: 0px 0px 10px 0px;
+}
+.inn_tvsatt_left {
+    width: 100%;
+    padding: 0px 0px 10px 0px;
+}
+.inn_tvsatt_right {
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+}
+.obann_cont h1 {
+    font-size: 24px;
+}
+.obann_cont ul li a {
+    font-size: 16px;
+}
+.inn_press ul li {
+    padding: 0px 0px 15px 0px;
+}
+.btride_tleft {
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+}
+.btride_tleft .checkbox {
+    width: 33.33%;
+}
+.btride_tright {
+    width: 100%;
+    padding: 20px 0px 0px 0px;
+}
+.btride_ltext {
+    width: 30%;
+}
+.btride_rtt {
+    width: 70%;
+}
+.btride_cleft {
+    width: 100%;
+}
+.btristate {
+    padding: 0px 5px 0px 5px;
+    width: 50%;
+}
+.btristate .form-control {
+    width: 100%;
+}
+.btride_cright {
+    width: 100%;
+}
+.btrcleft {
+    padding: 10px 0px 10px 0px;
+    width: 100%;
+    text-align: center;
+}
+.btrccenter {
+    padding: 0px 5px 0px 5px;
+    width: 50%;
+}
+.btrcright {
+    padding: 0px 5px 0px 5px;
+    width: 50%;
+}
+.btrcright .btn-default {
+    width: 100%;
+}
+.detailname {
+    padding: 0px 5px 10px 5px;
+    width: 50%;
+}
+.detailname .form-control {
+    width: 100%;
+}
+.detailbtn {
+    padding: 0px 5px 0px 5px;
+    width: 50%;
+}
+.detailbtn .btn-default {
+    width: 100%;
+}
+.scooty_cont_left_scooty h1 {
+    font-size: 36px;
+    
+}
+.scooty_cont_left_scooty {
+ 
+    padding: 15px 0px 0px 40px;
+}
+.cont_newsletter {
+     float: left;
+    width: 22%;
+    margin: 0 auto;
+}
+.become_butt .btn-lg, .btn-group-lg>.btn {
+    padding: 5px 4px;
+    font-size: 9px;
+   
+}
+.become_butt .btn-primary {
+   
+    width: 104px;
+  
+    margin-left: -11px;
+}
+.cont_newsletter .subsBn {
+   
+    font-size: 10px;
+}
+.cont_newsletter  .btn {
+    
+    padding: 6px 3px;}
+/*End of*/}/*768px*/
+
+@media (max-width: 767px)
+{
+.container {
+    width: 100%;
+}
+.inner_banner {
+    top: inherit;
+    bottom: 0;
+}
+.scooty_cont_left {
+    padding: 35px 0px 0px 20px;
+    width: 75%;
+}
+.scooty_cont_left h1 {
+    font-size: 34px;
+    margin: 0px 0px 25px 0px;
+}
+.scooty_cont_right {
+    padding: 40px 20px 0px 0px;
+    width: 25%;
+}
+.zyada p {
+    visibility: hidden;
+}
+.jupiter_cont_left {
+    width: 75%;
+    padding: 250px 0px 0px 20px;
+}
+.jupiter_cont_left h1 {
+    font-size: 34px;
+    margin: 0px 0px 25px 0px;
+}
+.pept_cont_left {
+    padding: 35px 0px 0px 20px;
+    width: 75%;
+}
+.pept_cont_left h1 {
+    font-size: 34px;
+    line-height: 35px;
+}
+.pept_cont_righttwo {
+    padding: 40px 20px 0px 0px;
+    width: 25%;
+}
+.pept_innright {
+    padding: 0px 0px 0px 0px;
+}
+.apache_cont_right {
+    padding: 214px 20px 0px 0px;
+    width: 25%;
+}
+.phoenix_cont_left {
+    width: 75%;
+    padding: 35px 0px 0px 20px;
+}
+.phoenix_cont_left h1 {
+    font-size: 34px;
+}
+.phoenix_cont_right {
+    padding: 72px 20px 0px 0px;
+    width: 25%;
+}
+.phoenix_innright .besooter:last-child {
+visibility:hidden;
+}
+.auto_cont_right {
+    padding: 70px 0px 0px 0px;
+    width: 25%;
+}
+.tvsxl_cont_left {
+    width: 75%;
+    padding: 35px 0px 0px 20px;
+}
+.tvsxl_cont_right {
+    width: 25%;
+    padding: 0px 15px 0px 0px;
+}
+.tvsxl_cont_left h1 {
+    font-size: 34px;
+    width: 400px;
+}
+.tvsxl_cont_right .auto_cont_right {
+    width: 100%;
+    padding: 10px 0px 0px 0px;
+}
+.contact_left {
+    width: 100%;
+padding: 0px 0px 15px 0px;
+    border-bottom: 1px dashed #ccc;
+    margin: 0px 0px 25px 0px;
+}
+.contact_right {
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+    border-left: none;
+}
+.fincontbann {
+    display: none;
+}
+.unaudit_right {
+    display: none;
+}
+.fin_result .nav-tabs {
+    height: auto;
+	    text-align: center;
+}
+.nav-tabs>li {
+       width: 100% !important;
+}
+.coporate {
+    height: auto;
+}
+.policies {
+    height: auto;
+}
+.address p
+{
+      margin: 0px 0px 0px 0px;
+    font-size: 14px;  
+    }
+.inn_press h2 {
+    font-size: 24px;
+}
+.ecgc_left {
+    float: none;
+    width: 100%;
+    padding: 10px 0px 0px 0px;
+    margin: 0px 0px 10px 0px;
+}
+.ecgc_right {
+    width: 100%;
+    float: left;
+}
+.ecgc_right img {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+.winning {
+    height: auto;
+}
+.tab_dakar {
+    width: 100%;
+    margin-top: 15px;
+}
+.fin_result .tab-content>.tab-pane {
+    padding: 35px 0px 10px 10px;
+}
+.winning_2 {
+    margin-top: 0px;
+}
+.winning_line {
+    padding: 20px 0px 0px 0px;
+}
+.btride_tleft 
+{
+width: 100%;
+padding: 8px 0px 0px 0px;
+}
+.btride_tright {
+width: 100%;
+margin: 15px 0px 0px 0px;
+}
+.btride_cleft {
+    width: 100%;
+}
+.btristate {
+    width: 50%;
+}
+.btristate .form-control {
+    width: 100%;
+}
+.btride_cright {
+    width: 100%;
+}
+.btrcleft {
+    padding: 15px 0px 15px 0px;
+    width: 100%;
+    text-align: center;
+}
+.btrccenter {
+    padding: 0px 10px 0px 0px;
+    width: 50%;
+}
+.btrccenter .form-control {
+    width: 100%;
+}
+.btrcright {
+    padding: 0px 10px 0px 0px;
+    width: 50%;
+}
+.btrcright .btn-default {
+    width: 100%;
+}
+.detailname {
+    width: 50%;
+        padding: 0px 10px 10px 0px;
+}
+.detailname .form-control {
+    width: 100%;
+}
+.detailbtn {
+    width: 50%;
+    padding: 0px 10px 0px 0px;
+}
+.detailbtn .btn-default {
+    width: 100%;
+}
+.dealers {
+    width: 100%;
+    position: static;
+    top: 0px;
+    left: 0px;
+    background-color: #fff;
+}
+.map_your {
+    height: auto;
+    padding: 20px 20px 20px 20px;
+}
+.map_your_left {
+    width: 100%;
+}
+.map_your_right {
+    width: 100%;
+}
+.myr_left {
+    width: 100%;
+    text-align: center;
+}
+.myr_right {
+    padding: 0px 0px 0px 0px;
+}
+.s_finleft {
+    width: 33.33%;
+}
+.s_finleft .btn-default {
+    width: 100%;
+}
+.dealer_map iframe {
+    height: 100%;
+}
+.inny_bik
+{
+border-bottom: 1px dashed #ccc;
+padding: 0px 0px 15px 0px;
+margin: 0px 0px 20px 0px;  
+}
+.inny_bik_left {
+    width: 100%;
+    text-align: center;
+}
+.inny_bik_left img{
+display:inline-block;
+}
+.inny_bik_center {
+    display: none;
+}
+.inny_bik_right {
+    width: 100%;
+    padding: 20px 0px 0px 0px;
+    height: auto;
+}
+.cover_left p {
+    font-size: 16px;
+}
+.inny_bik_two
+{
+border-bottom: 1px dashed #ccc;
+padding: 0px 0px 20px 0px;
+margin: 0px 0px 20px 0px;  
+}
+.inny_bikt_left {
+    width: 100%;
+    height: auto;
+    padding: 0px 0px 20px 0px;
+}
+.inny_bikt_center {
+    display: none;
+}
+.inny_bikt_right {
+    width: 100%;
+    text-align: center;
+}
+.inny_bik_right p
+{
+  width: 100%;  
+    }
+.inny_bikt_right img{
+display: inline-block;
+}
+.center_dot {
+    display: none;
+}
+#main_menu .dropdown-menu.stay {
+    display: none !important;
+}
+.scooty_cont_left_scooty h1 {
+    font-size: 34px;
+  
+}
+.scooty_cont_left_scooty {
+  
+    padding: 10px 0px 0px 40px;
+}
+.jupiter_cont_left h1 {
+    
+    padding: 32px 0px 0px 0px;
+}
+.become_butt {
+    position: relative;
+    bottom: 55px;
+    left: 0px;
+}
+#Div1{
+    margin: 0px 0px -35px 0px;
+}
+.cont_newsletter {
+  
+    width: 100%;
+    
+}
+.wrap_newsletter {
+    width: 40%;
+    
+}
+.investor ul {
+   
+    text-align: center;
+}
+
+/*End of*/}/*767px*/
+
+@media (max-width: 480px) {
+.scooty_cont_left h1 {
+    font-size: 22px;
+}
+.red_btn a {
+    width: 150px;
+    height: 33px;
+    font-size: 11px;
+} 
+.jupiter_cont_left h1 
+{
+width: 273px;
+font-size: 22px;
+} 
+.pept_cont_left h1 {
+       font-size: 22px;
+    line-height: 35px;
+    background: transparent;
+    color: #5D5D5D;
+    padding: 0px 0px 10px 10px;
+    margin: 0px 0px 10px 0px;
+    width: 265px;
+} 
+.apache_cont_right {
+    padding: 164px 20px 0px 0px;
+}
+.besooter p {
+    bottom: 10px;
+    padding: 0px 0px 0px 4px;
+    font-size: 11px;
+}
+.phoenix_cont_left h1 {
+    margin: 0px 0px 15px 0px;
+        font-size: 22px;
+}
+.scooty_cont_left .auto {
+    width: auto;
+}
+.tvsxl_cont_left h1 {
+    font-size: 22px;
+    width: 310px;
+}
+.reset_right .btn-default {
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+}
+.dealer_map iframe {
+    width: 100%;
+    height: 100%;
+}
+.go_loc_left {
+    width: 80%;
+}
+.go_loc_left .form-control {
+    width: 100%;
+}
+.go_loc_right {
+    width: 20%;
+}
+.go_loc_right .btn-default {
+    width: 100%;
+}
+.s_finleft {
+    width: 33.33%;
+    padding: 0px 5px 0px 5px;
+}
+.jupiter_cont_left {
+  
+    padding: 176px 0px 0px 20px;
+}
+.scooty_cont_left_scooty h1 {
+    font-size: 22px;
+}
+.scooty_cont_left_star h1 {
+    font-size: 22px;
+    
+    margin: 13px 0px 45px 20px;
+    color: #fff;
+    
+}
+.cont_newsletter p{
+font-size: 13px;
+}
+/*End of*/}/*480px*/
+@media (min-width: 321px) and (max-width: 410px)
+{
+.carousel .item {
+    height: auto;
+    background-color: #f4f4f4;
+    min-height: 550px;
+}
+.scooty_cont_wrap {
+    top: 235px;
+    width: 100%;
+}
+.scooty_cont_left {
+    padding: 0px 10px 0px 10px;
+    width: 100%;
+}
+.scooty_cont_left h1 {
+    font-size: 22px;
+    width: auto;
+        color: #000 !important;
+}
+.red_btn {
+    float: left;
+    width: 50%;
+}
+.red_btn a {
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+}
+.scooty_cont_right {
+    padding: 10px 10px 0px 10px;
+    width: 100%;
+}
+.besooter {
+    width: 50%;
+    float: left;
+}
+.jupiter_cont_wrap {
+    top: 235px;
+    width: 100%;
+}
+.jupiter_cont_left {
+    width: 100%;
+    padding: 0px 10px 0px 10px;
+}
+.jupiter_cont_left h1 {
+    width: auto;
+    color: #000;
+}
+.scooty_cont_left .szest {
+    width: auto;
+}
+.pept_cont_left {
+    padding: 0px 10px 0px 10px;
+    width: 100%;
+}
+.pept_cont_left h1 {
+    background: transparent;
+    color: #000;
+    padding: 10px 0px 10px 10px;
+    margin: 0px 0px 10px 0px;
+    width: auto;
+}
+.pept_cont_righttwo {
+    padding: 10px 10px 0px 10px;
+    width: 100%;
+}
+.apache_cont_right {
+    padding: 0px 10px 0px 10px;
+    width: 100%;
+}
+.phoenix_cont_left {
+    width: 100%;
+    padding: 0px 10px 0px 10px;
+}
+.phoenix_cont_right {
+    padding: 0px 10px 0px 10px;
+    width: 100%;
+}
+.auto_cont_right {
+    padding: 20px 10px 0px 10px;
+    width: 100%;
+}
+.tvsxl_cont_left {
+    width: 100%;
+    padding: 0px 10px 0px 10px;
+}
+.tvsxl_cont_left h1 {
+    font-size: 22px;
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+}
+.tvsxl_cont_right {
+    width: 100%;
+    padding: 0px 10px 0px 10px;
+}
+.reset_right .btn-default {
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+}
+.btristate {
+    width: 100%;
+    padding: 0px 0px 10px 0px;
+}
+.btrccenter {
+    padding: 0px 0px 10px 0px;
+    width: 100%;
+}
+.btrcright {
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+}
+.detailname {
+    width: 100%;
+    padding: 0px 0px 10px 0px;
+}
+.detailbtn {
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+}
+.obann_cont ul {
+    display: none;
+}
+.cover_left h1 {
+    font-size: 20px;
+}
+.dealer_map iframe {
+    width: 100%;
+    height: 100%;
+}
+.s_finleft {
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 10px 0px;
+}
+.myr_left {
+    padding: 20px 0px 20px 0px;
+}
+/*End of*/}/*320px*/
+@media (max-width: 320px)
+{
+.carousel .item {
+    height: auto;
+    background-color: #f4f4f4;
+    min-height: 465px;
+}
+.scooty_cont_wrap {
+    top: 176px;
+    width: 100%;
+}
+.scooty_cont_left {
+    padding: 0px 10px 0px 10px;
+    width: 100%;
+}
+.scooty_cont_left h1 {
+    font-size: 22px;
+    width: auto;
+        color: #000 !important;
+}
+.red_btn {
+    float: left;
+    width: 50%;
+}
+.red_btn a {
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+}
+.scooty_cont_right {
+    padding: 10px 10px 0px 10px;
+    width: 100%;
+}
+.besooter {
+    width: 50%;
+    float: left;
+}
+.jupiter_cont_wrap {
+    top: 176px;
+    width: 100%;
+}
+.jupiter_cont_left {
+    width: 100%;
+    padding: 0px 10px 0px 10px;
+}
+.jupiter_cont_left h1 {
+    width: auto;
+    color: #000;
+}
+.scooty_cont_left .szest {
+    width: auto;
+}
+.pept_cont_left {
+    padding: 0px 10px 0px 10px;
+    width: 100%;
+}
+.pept_cont_left h1 {
+    background: transparent;
+    color: #000;
+    padding: 10px 0px 10px 10px;
+    margin: 0px 0px 10px 0px;
+    width: auto;
+}
+.pept_cont_righttwo {
+    padding: 10px 10px 0px 10px;
+    width: 100%;
+}
+.apache_cont_right {
+    padding: 0px 10px 0px 10px;
+    width: 100%;
+}
+.phoenix_cont_left {
+    width: 100%;
+    padding: 0px 10px 0px 10px;
+}
+.phoenix_cont_right {
+    padding: 0px 10px 0px 10px;
+    width: 100%;
+}
+.auto_cont_right {
+    padding: 20px 10px 0px 10px;
+    width: 100%;
+}
+.tvsxl_cont_left {
+    width: 100%;
+    padding: 0px 10px 0px 10px;
+}
+.tvsxl_cont_left h1 {
+    font-size: 22px;
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+}
+.tvsxl_cont_right {
+    width: 100%;
+    padding: 0px 10px 0px 10px;
+}
+.reset_right .btn-default {
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+}
+.cotact_fleft {
+    float: left;
+    width: 100%;
+    padding: 0px 15px 0px 0px;
+}
+.cotact_fleft label {
+    width: 100%;
+    margin: 0px 0px 5px 0px;
+}
+.cotact_fleft label span {
+    display: none;
+}
+.cotact_fright {
+    width: 100%;
+}
+.btride_tleft .checkbox {
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+}
+.btride_rtt {
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+}
+.btristate {
+    width: 100%;
+    padding: 0px 0px 10px 0px;
+}
+.btrccenter {
+    padding: 0px 0px 10px 0px;
+    width: 100%;
+}
+.btrcright {
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+}
+.detailname {
+    width: 100%;
+    padding: 0px 0px 10px 0px;
+}
+.detailbtn {
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+}
+.obann_cont ul {
+    display: none;
+}
+.cover_left h1 {
+    font-size: 20px;
+}
+.dealer_map iframe {
+    width: 100%;
+    height: 100%;
+}
+.s_finleft {
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 10px 0px;
+}
+.myr_left {
+    padding: 20px 0px 20px 0px;
+}
+.wrap_newsletter {
+    width: 70%;
+}
+.cont_newsletter  .carousel .item {
+   
+    background-color: transparent;
+   
+}
+.scooty_cont_left_scooty {
+    width: 100%;
+  
+        padding: 10px 0px 0px 20px;
+}
+.scooty_cont_left_scooty h1 {
+   
+    margin: 0px 0px 3px 0px;
+  
+}
+.scooter_zest_mob{
+    margin-top: -12px;
+}
+/*End of*/}/*320px*/
