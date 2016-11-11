@@ -1,20 +1,20 @@
 <?php
 
-class conWeb extends CI_Controller{
+class ConWeb extends CI_Controller{
 	
 	function __construct(){
 		parent::__construct();
-		$this->load->model(array('modWeb','modAdmin'));
+		$this->load->model(array('ModWeb','ModAdmin'));
 	}
 
 	function event(){
 		$id = $this->uri->segment(3);
-		$data['d'] =$this->modWeb->eventOne($id)->row_array();
+		$data['d'] =$this->ModWeb->eventOne($id)->row_array();
 		$this->template->load('Template','Website/event',$data);
 	}
 	function pers(){
 		$id = $this->uri->segment(3);
-		$data['d'] =$this->modWeb->pers($id)->row_array();
+		$data['d'] =$this->ModWeb->pers($id)->row_array();
 		$this->template->load('Template','Website/pers',$data);
 	}
 	function komunitas(){
@@ -37,7 +37,7 @@ class conWeb extends CI_Controller{
 			$tgl = getdate();
 			$tahun = $tgl['year'];
 			$data['tahun'] = $tahun;
-			$data['isi'] = $this->modWeb->cliping();
+			$data['isi'] = $this->ModWeb->cliping();
 			$this->template->load('Template','Website/komunitas',$data);
 		}
 	}
@@ -51,7 +51,7 @@ class conWeb extends CI_Controller{
 		      		location.href='produk'</script>";
 			}else{
 				$data = array('kodePelanggan'=>$idpel,'komentar'=>$komen);
-				$this->modWeb->komunitas($data);
+				$this->ModWeb->komunitas($data);
 				echo "<script>alert('Komentar Berhasil ditambahkan')
 			      location.href='Kkomunitas/$idpel'</script>";
 			}
@@ -60,19 +60,19 @@ class conWeb extends CI_Controller{
 			echo "<script>location.href='komunitasfull/$idpel'</script>";
 		}else{
 			$data['idpel'] = $id;
-			$data['jum'] = $this->modWeb->tampilkomunitasfull()->num_rows();
-			$data['Koment'] = $this->modWeb->tampilkomunitas();
+			$data['jum'] = $this->ModWeb->tampilkomunitasfull()->num_rows();
+			$data['Koment'] = $this->ModWeb->tampilkomunitas();
 			$this->template->load('Template','Website/Kkomunitas',$data);
 		}
 	}
 	function komunitasfull(){
 		$data['idpel'] = $this->uri->segment(3);
-		$data['jum'] = $this->modWeb->tampilkomunitasfull()->num_rows();
-		$data['Koment'] = $this->modWeb->tampilkomunitasfull();
+		$data['jum'] = $this->ModWeb->tampilkomunitasfull()->num_rows();
+		$data['Koment'] = $this->ModWeb->tampilkomunitasfull();
 		$this->template->load('Template','Website/Kkomunitas',$data);
 	}
 	function index(){
-		$data['isi'] = $this->modWeb->awal();
+		$data['isi'] = $this->ModWeb->awal();
 		$this->template->load('Template','Website/awal',$data);
 	}
 	function korporat(){
@@ -82,20 +82,39 @@ class conWeb extends CI_Controller{
 		if(isset($_POST['post'])){
 			$id = $this->input->post('cari');
 
-			$hsl = $this->modWeb->produkCari($id);
+			$hsl = $this->ModWeb->produkCari($id);
 			if($hsl->num_rows()>0){
-				$data['isi'] = $this->modWeb->produkCari($id);
+				$data['d'] = $this->ModAdmin->kodepelanggan();
+				$data['isi'] = $this->ModWeb->produkCari($id);
 		        $this->template->load('Template','Website/produk',$data);
 			}else{
 				echo "<script>alert('Produk Tidak Ditemukan')
 			      location.href='produk'</script>";
 			}
 		}else{
-			$data['d'] = $this->modAdmin->kodepelanggan();
-			$data['isi'] = $this->modWeb->produk();
-		    $this->template->load('Template','Website/produk',$data);	
+			$data['d'] = $this->ModAdmin->kodepelanggan();
+			$data['isi'] = $this->ModWeb->produk();
+			$this->template->load('Template','Website/produk',$data);	
 		}
 			
+	}
+
+	function pelanggan(){
+		if(isset($_POST['post'])){
+			$nama = $this->input->post('nama');
+			$alamat = $this->input->post('alamat');
+			$telp = $this->input->post('telepon');
+			if($nama ==""|| $alamat =="" || $telp ==""){
+			echo "<script>alert('Data Masih Kosong')
+					location.href='../ConWeb/produk'</script>";
+			}else{
+				$kod = $this->ModAdmin->kodepelanggan();
+				$data = array('kodePelanggan'=>$kod,'NamaPelanggan'=>$nama,'Alamat'=>$alamat,'Telpon'=>$telp);
+				$this->ModAdmin->pelanggan($data);
+				echo "<script>alert('Pelanggan Berhasil ditambahkan')
+					location.href='../ConWeb/produk'</script>";
+			}
+		}
 	}
 	
 	function komentar(){
@@ -113,42 +132,42 @@ class conWeb extends CI_Controller{
 
 				}else{
 					$data = array('idProduk'=>$idp,'kodePelanggan'=>$kodePelanggan,'komentar'=>$komentar);
-					$this->modWeb->tambahKomentar($data);
+					$this->ModWeb->tambahKomentar($data);
 					echo "<script>alert('Komentar Berhasil')
 			      	location.href='komentar/$idp'</script>";
 				}
 			}
 		}else if(isset($_POST['tampil'])){
 			$idp = $this->input->post('idProduk');
-			$data['Koment'] = $this->modWeb->fullKomentar($idp);
-			$data['jum'] = $this->modWeb->fullKomentar($idp)->num_rows();
-			$data['isi'] = $this->modWeb->produkOne($idp)->row_array();
+			$data['Koment'] = $this->ModWeb->fullKomentar($idp);
+			$data['jum'] = $this->ModWeb->fullKomentar($idp)->num_rows();
+			$data['isi'] = $this->ModWeb->produkOne($idp)->row_array();
 			$this->template->load('Template','Website/komentar',$data);	
 		}else{
 			$id = $this->uri->segment(3);
-			$data['Koment'] = $this->modWeb->komentarLimit($id);
-			$data['jum'] = $this->modWeb->fullKomentar($id)->num_rows();
-			$data['isi'] = $this->modWeb->produkOne($id)->row_array();
+			$data['Koment'] = $this->ModWeb->komentarLimit($id);
+			$data['jum'] = $this->ModWeb->fullKomentar($id)->num_rows();
+			$data['isi'] = $this->ModWeb->produkOne($id)->row_array();
 			$this->template->load('Template','Website/komentar',$data);	
 		}
 	}
 	
 	function bisnis(){
-		$data['isi'] = $this->modWeb->galeri();
+		$data['isi'] = $this->ModWeb->galeri();
 		$this->template->load('Template','Website/bisnis',$data);
 	}
 	function media(){
 		$tgl = getdate();
 		$tahun = $tgl['year'];
 		$data['tahun'] = $tahun;
-		$data['isi'] = $this->modWeb->cliping();
-		$data['data'] = $this->modAdmin->tampilContent();
-		$data['eve'] = $this->modWeb->event();
+		$data['isi'] = $this->ModWeb->cliping();
+		$data['data'] = $this->ModAdmin->tampilContent();
+		$data['eve'] = $this->ModWeb->event();
 		$this->template->load('Template','Website/media',$data);
 	}
 	function dCliping(){
 		$id = $this->uri->segment(3);
-		$gambar = $this->modAdmin->getClipping($id);
+		$gambar = $this->ModAdmin->getClipping($id);
 		$data = file_get_contents(base_url()."/assets/Upload/".$gambar);
 		$path = "Cliping.jpg";
 		force_download($path,$data);
@@ -170,7 +189,7 @@ class conWeb extends CI_Controller{
 		      		location.href='produk'</script>";
 				}else{
 					$data = array('kodePelanggan'=>$id,'tahun'=>$tahun,'jenis'=>$jenis,'keluahan'=>$keluhan,'status'=>$st);
-					$this->modWeb->service($data);
+					$this->ModWeb->service($data);
 					echo "<script>alert('Terimakasih, keluhan anda akan segera kami proses')
 			      	location.href='services'</script>";
 				}
@@ -187,14 +206,14 @@ class conWeb extends CI_Controller{
 				echo "<script>alert('Anda belum terdaftar')
 				      location.href='produk'</script>";
 				}else{
-					$data['x'] = $this->modWeb->getdialog($id);
+					$data['x'] = $this->ModWeb->getdialog($id);
 					$data['y'] = "Keluhan,";
 					$data['z'] = "Tanggapan Admin,";
 					$tgl = getdate();
 					$tahun = $tgl['year'];
 					$data['tahun'] = $tahun;
-					$data['isi'] = $this->modWeb->cliping();
-					$data['data'] = $this->modAdmin->tampilContent();
+					$data['isi'] = $this->ModWeb->cliping();
+					$data['data'] = $this->ModAdmin->tampilContent();
 					$this->template->load('Template','Website/cService',$data);
 				}
 			}
@@ -204,8 +223,8 @@ class conWeb extends CI_Controller{
 			$tgl = getdate();
 			$tahun = $tgl['year'];
 			$data['tahun'] = $tahun;
-			$data['isi'] = $this->modWeb->cliping();
-			$data['data'] = $this->modAdmin->tampilContent();
+			$data['isi'] = $this->ModWeb->cliping();
+			$data['data'] = $this->ModAdmin->tampilContent();
 			$this->template->load('Template','Website/services',$data);
 		}
 	}

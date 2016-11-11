@@ -1,11 +1,11 @@
 <?php
 
-class con_login extends CI_Controller
+class Con_login extends CI_Controller
 {
 	function __construct()
 	{
 		parent::__construct();
-        $this->load->model(array('mod_login'));	
+        $this->load->model(array('Mod_login'));	
 	}
 	function index(){
         //$this->load->view('Admin/login');
@@ -14,7 +14,7 @@ class con_login extends CI_Controller
 			$pass = $this->input->post('Password');
 			//$pass1 = md5($pass);
 			$data = array('username' => $user, 'password'=> md5($pass));
-			$log=  $this->mod_login->login($data);
+			$log=  $this->Mod_login->login($data);
             if($log->num_rows()==1)
             {
             	//echo $user."<br>";
@@ -27,10 +27,10 @@ class con_login extends CI_Controller
                     }
 
                     echo "<script>alert('Welcome In Dasboard TVS Motor')
-                    location.href='con_admin/tampilPicture'</script>";
+                    location.href='Con_admin/tampilPicture'</script>";
             }else{
                 	echo "<script>alert('Password Tidak ada')
-                    location.href='con_login'</script>";
+                    location.href='Con_login'</script>";
             }
 		}else{
 			$this->load->view('Admin/login');
@@ -41,7 +41,7 @@ class con_login extends CI_Controller
         $this->session->unset_userdata('username');
         session_destroy();
          echo "<script>alert('Terimakasih sudah menggunakan aplikasi Ini :)')
-                    location.href='../conWeb'</script>";
+                    location.href='../ConWeb'</script>";
     }   
 }
 ?>

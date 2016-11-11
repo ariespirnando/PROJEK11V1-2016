@@ -1,5 +1,5 @@
 <?php
-class modWeb extends CI_Model{
+class ModWeb extends CI_Model{
 	
 
 	function service($data){

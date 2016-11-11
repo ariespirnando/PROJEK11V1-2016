@@ -36,7 +36,7 @@
                     <table>
                         <tr>
                             <td>
-                                <?php echo form_open('con_admin/pelanggan')?>
+                                <?php echo form_open('conWeb/pelanggan')?>
                                     <b>Isi Data Pelanggan<hr></b>
 
                                     <table>

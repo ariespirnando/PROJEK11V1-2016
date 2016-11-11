@@ -59,13 +59,13 @@ CREATE TABLE `tbdialog` (
   `Komentar` text,
   `idService` int(10) unsigned NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `idService` (`idService`),
-  CONSTRAINT `tbdialog_ibfk_1` FOREIGN KEY (`idService`) REFERENCES `tbservice` (`idService`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+  KEY `tbdialog_ibfk_1` (`idService`),
+  CONSTRAINT `tbdialog_ibfk_1` FOREIGN KEY (`idService`) REFERENCES `tbservice` (`idService`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 
 /*Data for the table `tbdialog` */
 
-insert  into `tbdialog`(`id`,`tanggal`,`Komentar`,`idService`) values (3,'2016-11-05 13:18:43','sdfghjl',7);
+insert  into `tbdialog`(`id`,`tanggal`,`Komentar`,`idService`) values (4,'2016-11-12 04:44:45','tes',9),(5,'2016-11-12 04:45:06','asdfghjkl',9),(6,'2016-11-12 04:50:42','tews',10),(7,'2016-11-12 04:55:34','tes',8),(8,'2016-11-12 04:55:43','tes',10);
 
 /*Table structure for table `tbgambar` */
 
@@ -100,7 +100,7 @@ CREATE TABLE `tbkomentar` (
   KEY `idProduk` (`idProduk`),
   CONSTRAINT `tbkomentar_ibfk_1` FOREIGN KEY (`kodePelanggan`) REFERENCES `tbpelanggan` (`kodePelanggan`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `tbkomentar_ibfk_2` FOREIGN KEY (`idProduk`) REFERENCES `tbproduk` (`idProduk`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;
 
 /*Data for the table `tbkomentar` */
 
@@ -138,7 +138,7 @@ CREATE TABLE `tbpelanggan` (
 
 /*Data for the table `tbpelanggan` */
 
-insert  into `tbpelanggan`(`kodePelanggan`,`NamaPelanggan`,`Alamat`,`Telpon`) values ('PL1000001','admin','admin','admin'),('PL1000002','Achmad Aries Pirnando','Kotabumi','085669555948'),('PL1000003','Aini Rahmayati','Liwa','085669555068');
+insert  into `tbpelanggan`(`kodePelanggan`,`NamaPelanggan`,`Alamat`,`Telpon`) values ('PL1000001','admin','admin','admin'),('PL1000002','Achmad Aries Pirnando','Kotabumi','085669555948'),('PL1000003','Aini Rahmayati','Liwa','085669555068'),('PL1100004','tes','testes','tes');
 
 /*Table structure for table `tbproduk` */
 
@@ -177,7 +177,7 @@ CREATE TABLE `tbservice` (
 
 /*Data for the table `tbservice` */
 
-insert  into `tbservice`(`idService`,`kodePelanggan`,`tahun`,`jenis`,`keluahan`,`tanggal`,`status`) values (7,'PL1000003',2028,'TVS Neo','Motor Tidak bisa jalan, Mesin Dengung, ban bocor','2016-11-05 15:37:40',2),(8,'PL1000002',1990,'a','a','2016-11-05 13:32:50',2),(9,'PL1000003',2008,'sadfs','sa','2016-11-05 15:32:37',1),(10,'PL1000002',1995,'sdfghjkl.','cvbnm','2016-11-05 16:09:26',1);
+insert  into `tbservice`(`idService`,`kodePelanggan`,`tahun`,`jenis`,`keluahan`,`tanggal`,`status`) values (8,'PL1000002',1990,'a','a','2016-11-12 04:55:34',2),(9,'PL1000003',2008,'sadfs','sa','2016-11-05 15:32:37',1),(10,'PL1000002',1995,'sdfghjkl.','cvbnm','2016-11-12 04:55:43',2);
 
 /*Table structure for table `tbuser` */
 

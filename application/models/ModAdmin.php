@@ -8,10 +8,10 @@ class modAdmin extends CI_Model
 		$param = array('idService'=>$id);
 		return $this->db->get_where('v_service',$param);
 	}
-	function updateServic($id,$st){
-		$sql ="UPDATE tbservice SET STATUS = $st WHERE `idService` = $id";
-		$this->db->query($sql);
 
+	function updateServic($id){
+		$sql ="UPDATE tbservice SET STATUS = 2 WHERE `idService` = $id";
+		$this->db->query($sql);
 	}
 	function tampildialog(){
 
